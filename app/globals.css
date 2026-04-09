@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes progress {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --radius: 0.5rem;
+    --brand: #003087;
+    --accent: #E8470A;
+    --sky: #00AEEF;
+    --brand-light: #0050C8;
+    --surface-alt: #F2F4F7;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-[#1E2A3A] font-sans antialiased;
+  }
+}

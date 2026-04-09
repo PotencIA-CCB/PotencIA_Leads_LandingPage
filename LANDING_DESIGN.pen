@@ -1,0 +1,4553 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "Vpq8k",
+      "x": 0,
+      "y": 0,
+      "name": "ConsultorIA Landing Page",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Opy4K",
+          "name": "Navbar",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#E5E7EB"
+          },
+          "padding": [
+            0,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "0gGWg",
+              "name": "Logo",
+              "height": "fill_container",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lgHNW",
+                  "name": "logoIcon",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "#00AEEF",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PynwQ",
+                      "name": "logoIconText",
+                      "fill": "#FFFFFF",
+                      "content": "B",
+                      "fontFamily": "Poppins",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "7nbi2",
+                  "name": "logoText",
+                  "fill": "#003087",
+                  "textGrowth": "fixed-width",
+                  "width": 160,
+                  "content": "CÁMARA DE COMERCIO\nDE BARRANQUILLA",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Poppins",
+                  "fontSize": 11,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EoFii",
+              "name": "Nav Links",
+              "height": "fill_container",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "I4nOs",
+                  "fill": "#1E2A3A",
+                  "content": "Inicio",
+                  "fontFamily": "Poppins",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xMz7K",
+                  "fill": "#1E2A3A",
+                  "content": "¿Qué es?",
+                  "fontFamily": "Poppins",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "80XEz",
+                  "fill": "#003087",
+                  "content": "Casos de uso",
+                  "fontFamily": "Poppins",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "BNW0I",
+                  "fill": "#1E2A3A",
+                  "content": "Registrarme",
+                  "fontFamily": "Poppins",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "anuZv",
+              "name": "navCTA",
+              "cornerRadius": 4,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1.5,
+                "fill": "#003087"
+              },
+              "padding": [
+                8,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zLRE6",
+                  "fill": "#003087",
+                  "content": "Solicitar sesión",
+                  "fontFamily": "Poppins",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H4W7h",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 270,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#003087",
+                "position": 0
+              },
+              {
+                "color": "#0050C8",
+                "position": 0.4
+              },
+              {
+                "color": "#1A6EFF",
+                "position": 0.75
+              },
+              {
+                "color": "#2979FF",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            80,
+            64,
+            100,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "J2wJt",
+              "name": "heroBadge",
+              "fill": "#FFFFFF26",
+              "cornerRadius": 999,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF4D"
+              },
+              "gap": 6,
+              "padding": [
+                6,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "d2QRw",
+                  "fill": "#FFFFFF",
+                  "content": "✨",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "tKjWt",
+                  "fill": "#FFFFFF",
+                  "content": "Master IA · Cámara de Comercio de Barranquilla",
+                  "fontFamily": "Poppins",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QSwij",
+              "name": "heroTitles",
+              "width": 470,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8xn1i",
+                  "fill": "#FFFFFF",
+                  "content": "ConsultorIA",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 52,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "YLW1y",
+                  "fill": "#00AEEF",
+                  "textGrowth": "fixed-width",
+                  "width": 364,
+                  "content": "Nivel Básico",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 52,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "WzBcD",
+              "fill": "#FFFFFFE6",
+              "textGrowth": "fixed-width",
+              "width": 680,
+              "content": "Pasá de la idea al entregable en una sola sesión. Acompañamiento personalizado para producir documentos, informes y análisis de mayor calidad — más rápido.",
+              "textAlign": "center",
+              "fontFamily": "Poppins",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "twQnl",
+              "name": "heroCTA",
+              "fill": "#E8470A",
+              "cornerRadius": 4,
+              "padding": [
+                14,
+                40
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wHD5Y",
+                  "fill": "#FFFFFF",
+                  "content": "SOLICITAR MI SESIÓN",
+                  "fontFamily": "Poppins",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "u5LCC",
+          "name": "Beneficios",
+          "width": "fill_container",
+          "fill": "#F2F4F7",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "g1ivp",
+              "name": "sec2Header",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ExE1D",
+                  "fill": "#003087",
+                  "content": "¿Por qué PotencIA Nivel 1?",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 27,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "44VRu",
+                  "name": "sec2Underline",
+                  "fill": "#0050C8",
+                  "width": 48,
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "0ubsE",
+                  "fill": "#5A6475",
+                  "content": "Rápido, acotado y con entregables reales. El primer paso concreto de IA en tu empresa.",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zh0C5",
+              "name": "cardsRow1",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "EoJCo",
+                  "name": "card1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000F",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 4
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Hmz15",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "zap",
+                      "iconFontFamily": "lucide",
+                      "fill": "#00AEEF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4qP9J",
+                      "fill": "#003087",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Rápido",
+                      "fontFamily": "Poppins",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eLyvH",
+                      "fill": "#5A6475",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "1 a 2 horas por sesión. Resultados el mismo día, sin tiempos de espera ni procesos largos.",
+                      "fontFamily": "Poppins",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4oA9T",
+                  "name": "card2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000F",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 4
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "QOmSV",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "scan-eye",
+                      "iconFontFamily": "lucide",
+                      "fill": "#00AEEF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "my2TL",
+                      "fill": "#003087",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Acotado",
+                      "fontFamily": "Poppins",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jNcT0",
+                      "fill": "#5A6475",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Un solo caso por sesión. Alcance definido desde el inicio para maximizar tu resultado.",
+                      "fontFamily": "Poppins",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D9exS",
+                  "name": "card3",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000F",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 4
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "BdNi4",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "badge-check",
+                      "iconFontFamily": "lucide",
+                      "fill": "#00AEEF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tbKVf",
+                      "fill": "#003087",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Verificable",
+                      "fontFamily": "Poppins",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OOtbd",
+                      "fill": "#5A6475",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Evidencia real de uso. Entregable concreto que podés aplicar en tu trabajo desde hoy.",
+                      "fontFamily": "Poppins",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ffuhq",
+              "name": "cardsRow2",
+              "width": 440,
+              "gap": 24,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FPPnQ",
+                  "name": "card4",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000F",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 4
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "mJI1q",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "rocket",
+                      "iconFontFamily": "lucide",
+                      "fill": "#00AEEF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O1t1v",
+                      "fill": "#003087",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "El primer paso real",
+                      "fontFamily": "Poppins",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ildpV",
+                      "fill": "#5A6475",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "No es formación ni automatización de procesos. Es el primer paso concreto de implementación de IA en tu negocio.",
+                      "fontFamily": "Poppins",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bB7q1",
+          "name": "Metodología",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "9VqLE",
+              "name": "sec3Header",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2zGY0",
+                  "fill": "#003087",
+                  "content": "Estructura de la sesión",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 27,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "xzO6f",
+                  "fill": "#0050C8",
+                  "width": 48,
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jj68n",
+              "name": "timeline",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o5s6N",
+                  "name": "step1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XlQhf",
+                      "name": "step1Circle",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#003087",
+                      "cornerRadius": 22,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dfcvQ",
+                          "fill": "#FFFFFF",
+                          "content": "01",
+                          "fontFamily": "Poppins",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "6qjkB",
+                      "fill": "#003087",
+                      "content": "Apertura",
+                      "textAlign": "center",
+                      "fontFamily": "Poppins",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "g4CbY",
+                      "fill": "#5A6475",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "~10 min. Confirmamos el objetivo, reformulamos el problema y acordamos qué haremos y qué NO.",
+                      "textAlign": "center",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "L7BKP",
+                  "name": "step2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "A0Yes",
+                      "name": "step2Circle",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#003087",
+                      "cornerRadius": 22,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZIChk",
+                          "fill": "#FFFFFF",
+                          "content": "02",
+                          "fontFamily": "Poppins",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z4ImG",
+                      "fill": "#003087",
+                      "content": "Desarrollo",
+                      "textAlign": "center",
+                      "fontFamily": "Poppins",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iGDHf",
+                      "fill": "#5A6475",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "60–80 min. Trabajamos el caso paso a paso con IA de forma colaborativa y producimos el entregable acordado.",
+                      "textAlign": "center",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o0LB0",
+                  "name": "step3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zmhfE",
+                      "name": "step3Circle",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#003087",
+                      "cornerRadius": 22,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IrThf",
+                          "fill": "#FFFFFF",
+                          "content": "03",
+                          "fontFamily": "Poppins",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Pc54x",
+                      "fill": "#003087",
+                      "content": "Cierre",
+                      "textAlign": "center",
+                      "fontFamily": "Poppins",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gD21A",
+                      "fill": "#5A6475",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "~15 min. Revisamos el resultado, verificamos que cumple el objetivo y te explicamos cómo seguir usándolo.",
+                      "textAlign": "center",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JoBPv",
+          "name": "Antes Durante Después",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 270,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#003087",
+                "position": 0
+              },
+              {
+                "color": "#0050C8",
+                "position": 0.4
+              },
+              {
+                "color": "#1A6EFF",
+                "position": 0.75
+              },
+              {
+                "color": "#2979FF",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "SWJfv",
+              "name": "sec4Header",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "waPzG",
+                  "fill": "#FFFFFF",
+                  "content": "Tres preguntas para comenzar",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 27,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "Fpc8t",
+                  "fill": "#FFFFFF",
+                  "width": 48,
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hCSph",
+              "name": "sec4Cards",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Z7mCJ",
+                  "name": "sec4Card1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF1A",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF33"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    28,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "9mv9U",
+                      "name": "sec4Card1Header",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "jqOFo",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "circle-help",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zgvZc",
+                          "fill": "#FFFFFF",
+                          "content": "¿Qué querés resolver?",
+                          "fontFamily": "Poppins",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "GQ7kF",
+                      "fill": "#FFFFFFE6",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Describí el problema o tarea que querés trabajar con IA. Sé específico: cuanto más claro el objetivo, mejor el resultado de la sesión.",
+                      "lineHeight": 1.8,
+                      "fontFamily": "Poppins",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MBqtX",
+                  "name": "sec4Card2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF1A",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF33"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    28,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "a3MWe",
+                      "name": "sec4Card2Header",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "QlC5o",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "package",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "7kPBZ",
+                          "fill": "#FFFFFF",
+                          "content": "¿Qué entregable esperás?",
+                          "fontFamily": "Poppins",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZIYBd",
+                      "fill": "#FFFFFFE6",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "¿Un documento? ¿Un informe? ¿Una plantilla? ¿Un MVP funcional? Definí el resultado concreto que necesitás al terminar.",
+                      "lineHeight": 1.8,
+                      "fontFamily": "Poppins",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nxWp0",
+                  "name": "sec4Card3",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF1A",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF33"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    28,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fLM4E",
+                      "name": "sec4Card3Header",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "9Vfc4",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "folder-open",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "n3JVz",
+                          "fill": "#FFFFFF",
+                          "content": "¿Tenés el material?",
+                          "fontFamily": "Poppins",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "3RDoh",
+                      "fill": "#FFFFFFE6",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Documentos, datos, perfil de marca, acceso a herramientas. Sin insumos no podemos avanzar. Con estas tres respuestas, comenzamos.",
+                      "lineHeight": 1.8,
+                      "fontFamily": "Poppins",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xv7Ez",
+          "name": "Alcances",
+          "width": "fill_container",
+          "fill": "#F2F4F7",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "tOaOk",
+              "name": "sec5Header",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RgO58",
+                  "fill": "#003087",
+                  "content": "¿Qué está dentro del alcance?",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 27,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "9tQRV",
+                  "fill": "#0050C8",
+                  "width": 48,
+                  "height": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "n7g6M",
+              "name": "sec5Cols",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tVrhL",
+                  "name": "colSi",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000F",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "J8SvR",
+                      "name": "colSiHeader",
+                      "width": "fill_container",
+                      "fill": "#003087",
+                      "cornerRadius": [
+                        10,
+                        10,
+                        0,
+                        0
+                      ],
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "BFRUg",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "0ytVb",
+                          "fill": "#FFFFFF",
+                          "content": "✅ SÍ incluye",
+                          "fontFamily": "Poppins",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pIgMJ",
+                      "name": "colSiItems",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "xaaDA",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "left": 3
+                            },
+                            "fill": "#00AEEF"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "40TzW",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Documentos, informes, guías y análisis asistidos con IA",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zsMX0",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "left": 3
+                            },
+                            "fill": "#00AEEF"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rbIXY",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Entregable concreto y usable en la misma sesión",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hyCgJ",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "left": 3
+                            },
+                            "fill": "#00AEEF"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QTaNS",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Uso colaborativo y visible de la IA paso a paso",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VMWbK",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "left": 3
+                            },
+                            "fill": "#00AEEF"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hM6tN",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Alcance definido y acordado desde el inicio",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vEHsj",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "left": 3
+                            },
+                            "fill": "#00AEEF"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hzy11",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Un caso resuelto de principio a fin en 1–2 horas",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dYRYn",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "left": 3
+                            },
+                            "fill": "#00AEEF"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "KVhxg",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Evidencia real de implementación de IA en tu área",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uCpKx",
+                  "name": "colNo",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000F",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 8
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BDKry",
+                      "name": "colNoHeader",
+                      "width": "fill_container",
+                      "fill": "#5A6475",
+                      "cornerRadius": [
+                        10,
+                        10,
+                        0,
+                        0
+                      ],
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "CVnob",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "circle-x",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yCZLh",
+                          "fill": "#FFFFFF",
+                          "content": "❌ NO incluye",
+                          "fontFamily": "Poppins",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "74EAm",
+                      "name": "colNoItems",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "3tuoP",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#E5E7EB"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "0csnn",
+                              "fill": "#5A6475",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "❌  Automatización de procesos empresariales",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "UwJRq",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#E5E7EB"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xJiaQ",
+                              "fill": "#5A6475",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "❌  Integración con ERP, CRM o sistemas internos",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dFrjJ",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#E5E7EB"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "uKAH5",
+                              "fill": "#5A6475",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "❌  Soluciones a la medida o proyectos de largo aliento",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MBpEc",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#E5E7EB"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "u4PKq",
+                              "fill": "#5A6475",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "❌  Múltiples casos en una sola sesión",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "a6JJw",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#E5E7EB"
+                          },
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Nclr1",
+                              "fill": "#5A6475",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "❌  Compromisos ni entregas fuera de la sesión",
+                              "fontFamily": "Poppins",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "z8JJB",
+          "name": "Casos de Uso",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 56,
+          "padding": [
+            80,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ud0ry",
+              "name": "sec6Header",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jCrda",
+                  "fill": "#003087",
+                  "content": "Explorá todos los casos de uso",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 27,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "HhHCb",
+                  "fill": "#0050C8",
+                  "width": 48,
+                  "height": 3
+                },
+                {
+                  "type": "text",
+                  "id": "HVRzn",
+                  "fill": "#5A6475",
+                  "content": "Soluciones reales construidas en 1–2 horas · Herramientas, requisitos y resultados concretos",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AifSI",
+              "name": "cat1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "AWu0I",
+                  "name": "cat1hdr",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HsCZt",
+                      "name": "cat1Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#FFF4ED",
+                      "cornerRadius": 100,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tWfwI",
+                          "fill": "#E8470A",
+                          "content": "🧠",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iiZ6l",
+                      "name": "cat1txt",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7ddwn",
+                          "fill": "#003087",
+                          "content": "Asistentes de IA",
+                          "fontFamily": "Poppins",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nzO51",
+                          "fill": "#5A6475",
+                          "content": "Gestión & Productividad",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "od57M",
+                  "name": "cat1row",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S4KvS",
+                      "name": "card1",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "EWPp1",
+                          "name": "c1badge",
+                          "fill": "#FFF4ED",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "B4RDs",
+                              "fill": "#E8470A",
+                              "content": "👥 Recursos Humanos",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "iZ1NP",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Asistente de Evaluación de Candidatos",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "r9DtH",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Compará perfiles automáticamente y resaltá los mejores candidatos.\n\n📋 5–10 HVs en PDF/Word\n📋 Perfil del cargo a evaluar",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qB8Ko",
+                          "name": "tf1",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "2IFRN",
+                              "fill": "#5A6475",
+                              "content": "🛠 ChatGPT / Claude / Gemini",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "RON7k",
+                          "name": "c1result",
+                          "width": "fill_container",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "miEI0",
+                              "fill": "#00875A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "↓ 70% tiempo revisión de HVs",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "soB2i",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "adcty",
+                          "name": "c2badge",
+                          "fill": "#FFF4ED",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qmUdw",
+                              "fill": "#E8470A",
+                              "content": "📢 Marketing",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "hSXm8",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Generador de Contenido y Copys Creativos",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9MEAx",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Generá ideas, copies persuasivos y estrategias alineadas a la marca.\n\n📋 Meta del contenido\n📋 Canales objetivo (LinkedIn, Instagram…)",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Un9TX",
+                          "name": "tf2",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Fvm37",
+                              "fill": "#5A6475",
+                              "content": "🛠 ChatGPT / Claude / Gemini + Canva AI",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "l71CZ",
+                          "name": "c2result",
+                          "width": "fill_container",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iokxy",
+                              "fill": "#00875A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "↑ Más contenido en menos tiempo",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FbdT5",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "SfHzu",
+                          "name": "c3badge",
+                          "fill": "#FFF4ED",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "UplLX",
+                              "fill": "#E8470A",
+                              "content": "💰 Finanzas",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "OxLPq",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Analista de Estados Financieros",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "3jx4j",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Identificá tendencias, riesgos y oportunidades con resúmenes ejecutivos claros.\n\n📋 Estados financieros recientes\n📋 KPIs a monitorear (liquidez, rentabilidad)",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GW8Tw",
+                          "name": "tf3",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PZ49q",
+                              "fill": "#5A6475",
+                              "content": "🛠 ChatGPT / Claude / Gemini + Excel",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jfGsk",
+                          "name": "c3result",
+                          "width": "fill_container",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ULbC1",
+                              "fill": "#00875A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Reportes ejecutivos en minutos",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "APrHD",
+                      "name": "card4",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pFP6m",
+                          "name": "c4badge",
+                          "fill": "#FFF4ED",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Wkug4",
+                              "fill": "#E8470A",
+                              "content": "🗂️ Operaciones",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "OuwBi",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Asistente de Gestión Documental",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "i0ush",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Extraé datos clave y resumí documentos extensos de forma automatizada.\n\n📋 3–5 documentos típicos del área\n📋 Acción deseada (extraer, resumir…)",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vv2eA",
+                          "name": "tf4",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lPnuo",
+                              "fill": "#5A6475",
+                              "content": "🛠 ChatGPT / Claude + Google Drive",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ixjl3",
+                          "name": "c4result",
+                          "width": "fill_container",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "7asqz",
+                              "fill": "#00875A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "↓ 60% tiempo gestión documental",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LgUUR",
+              "name": "cat2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3Vt40",
+                  "name": "cat2hdr",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ygtss",
+                      "name": "cat2Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#F0F8FF",
+                      "cornerRadius": 100,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2qmUC",
+                          "fill": "#0050C8",
+                          "content": "☁️",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xchaS",
+                      "name": "cat2txt",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hMOM3",
+                          "fill": "#003087",
+                          "content": "Agentes integrados con tu workspace",
+                          "fontFamily": "Poppins",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sA8ZB",
+                          "fill": "#5A6475",
+                          "content": "Productividad & Cloud",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "opsIA",
+                  "name": "cat2row",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lVhYA",
+                      "name": "card5",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "WYEVG",
+                          "name": "c5badge",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "77UEN",
+                              "fill": "#0050C8",
+                              "content": "📧 Correo",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "sD6ti",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Buzón de Correo Inteligente",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MJkun",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Resumí hilos, extraé tareas pendientes y sugerí respuestas automáticamente.\n\n📋 Cuenta Google personal o corporativa\n📋 Cuenta en Claude.ai o Manus.ai",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "1cNCB",
+                          "name": "tf5",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VxLjT",
+                              "fill": "#5A6475",
+                              "content": "🛠 Gmail + Google Workspace + Gemini",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "iScPt",
+                          "name": "c5result",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qj32d",
+                              "fill": "#0050C8",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "↓ 50% tiempo revisión de correos",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ub8bV",
+                      "name": "card6",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "XAwgp",
+                          "name": "c6badge",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "pBtcg",
+                              "fill": "#0050C8",
+                              "content": "📅 Agenda",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "UeIp8",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Agente de Agenda y Tareas",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "x15dc",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Analizá el calendario, creá planes semanales y bloques de trabajo profundo.\n\n📋 Cuenta Google personal o corporativa\n📋 Cuenta en Claude.ai o Manus.ai",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rXFLm",
+                          "name": "tf6",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "LtY3y",
+                              "fill": "#5A6475",
+                              "content": "🛠 Google Calendar + Docs + Claude/Manus",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "EUgKd",
+                          "name": "c6result",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "1JbFl",
+                              "fill": "#0050C8",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Semanas planificadas en minutos",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q3KoJ",
+                      "name": "card7",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "l0oI4",
+                          "name": "c7badge",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BDfbK",
+                              "fill": "#0050C8",
+                              "content": "📄 Documentos",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "4mfQr",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Editor Inteligente de Documentos",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "FDTCb",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Revisá, mejorá y ajustá tono, claridad y estilo. Reescribí párrafos según instrucciones.\n\n📋 Cuenta Google personal o corporativa\n📋 Cuenta en Claude.ai o Manus.ai",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Jey8C",
+                          "name": "tf7",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "4qERf",
+                              "fill": "#5A6475",
+                              "content": "🛠 Google Docs + Claude / Manus AI",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "PQogA",
+                          "name": "c7result",
+                          "width": "fill_container",
+                          "fill": "#F0F8FF",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iMwS8",
+                              "fill": "#0050C8",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Documentos profesionales al instante",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UWMzH",
+              "name": "cat3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ls7Fx",
+                  "name": "cat3hdr",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OlGIH",
+                      "name": "cat3Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#E6F9F0",
+                      "cornerRadius": 100,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1xxTj",
+                          "fill": "#00875A",
+                          "content": "🚀",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KFf9u",
+                      "name": "cat3txt",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7JxiD",
+                          "fill": "#003087",
+                          "content": "Prototipado ágil de apps con IA",
+                          "fontFamily": "Poppins",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OkCry",
+                          "fill": "#5A6475",
+                          "content": "Desarrollo rápido & No-Code",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ild3Y",
+                  "name": "cat3row",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vwTtj",
+                      "name": "card8",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HLwxe",
+                          "name": "c8badge",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "mBO8J",
+                              "fill": "#00875A",
+                              "content": "🌐 Comercial",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "dYdn7",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Landing Page / MVP de Alta Conversión",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "n9plr",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Convertí una idea en una landing funcional con estructura, formulario y copy optimizado.\n\n📋 Cuenta en Lovable.dev\n📋 Cuenta en ChatGPT, Claude o Gemini",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "c1EuP",
+                          "name": "tf8",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "3gb8C",
+                              "fill": "#5A6475",
+                              "content": "🛠 Claude/ChatGPT + Lovable + Supabase",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nlSq3",
+                          "name": "c8result",
+                          "width": "fill_container",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "spFjs",
+                              "fill": "#00875A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Landing funcional en 1–2 horas",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DBvXd",
+                      "name": "card9",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "mlBZL",
+                          "name": "c9badge",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "aaNbv",
+                              "fill": "#00875A",
+                              "content": "⚙️ Operaciones",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "9Yhf0",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Mini SaaS para Automatización Interna",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ETwpX",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Gestión de tareas, control de gastos y herramientas internas sin desarrollo externo.\n\n📋 Cuenta en Lovable.dev, Supabase o Repaint\n📋 Cuenta en ChatGPT, Claude o Gemini",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GJMzS",
+                          "name": "tf9",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fwuB8",
+                              "fill": "#5A6475",
+                              "content": "🛠 Claude/ChatGPT + Lovable + Supabase",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "XoIJE",
+                          "name": "c9result",
+                          "width": "fill_container",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ZfHPe",
+                              "fill": "#00875A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Herramienta interna operativa en 2h",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bAlSF",
+                      "name": "card10",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#0000000F",
+                        "offset": {
+                          "x": 0,
+                          "y": 1
+                        },
+                        "blur": 4
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rziiW",
+                          "name": "c10badge",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 100,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "aFIR2",
+                              "fill": "#00875A",
+                              "content": "📊 Gerencia",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "7Jrg4",
+                          "fill": "#003087",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Dashboard de Analítica e Inteligencia de Negocio",
+                          "fontFamily": "Poppins",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Y9jJK",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Visualizá métricas clave y generá gráficos dinámicos para seguimiento de KPIs.\n\n📋 Cuenta en Lovable.dev\n📋 Cuenta en ChatGPT, Claude o Gemini",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CS2N6",
+                          "name": "tf10",
+                          "width": "fill_container",
+                          "fill": "#F2F4F7",
+                          "cornerRadius": 4,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "U0Lyc",
+                              "fill": "#5A6475",
+                              "content": "🛠 Claude/ChatGPT + Lovable + Supabase",
+                              "fontFamily": "Poppins",
+                              "fontSize": 10,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "r4JEY",
+                          "name": "c10result",
+                          "width": "fill_container",
+                          "fill": "#E6F9F0",
+                          "cornerRadius": 4,
+                          "padding": [
+                            5,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nrJnA",
+                              "fill": "#00875A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "KPIs en tiempo real sin depender de IT",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DI0BP",
+              "name": "noteFrame",
+              "width": "fill_container",
+              "fill": "#F0F8FF",
+              "cornerRadius": 8,
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "left": 4
+                },
+                "fill": "#00AEEF"
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vygts",
+                  "content": "🏢",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "PJguF",
+                  "name": "noteTextF",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AFfn2",
+                      "fill": "#003087",
+                      "content": "Cámara de Comercio de Barranquilla",
+                      "fontFamily": "Poppins",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wrwp1",
+                      "fill": "#5A6475",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Todos los casos de uso requieren 1–2 horas de sesión personalizada con un experto PotencIA.",
+                      "fontFamily": "Poppins",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UXxqp",
+          "name": "Formulario",
+          "width": "fill_container",
+          "fill": "#F2F4F7",
+          "layout": "vertical",
+          "gap": 25,
+          "padding": [
+            80,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "mYbXJ",
+              "name": "ctaBanner",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vifV2",
+                  "name": "ctaH",
+                  "fill": "#003087",
+                  "textGrowth": "fixed-width",
+                  "width": 720,
+                  "content": "¿Listo para potenciar tu trabajo con IA?",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "2qZp8",
+              "name": "Form Card",
+              "width": 580,
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000014",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 12
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "4rRVT",
+                  "name": "formHeader",
+                  "width": "fill_container",
+                  "fill": "#003087",
+                  "cornerRadius": [
+                    12,
+                    12,
+                    0,
+                    0
+                  ],
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "arKJB",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Deja tus datos y te contactamos en menos de 24 horas para agendar tu sesión personalizada.",
+                      "textAlign": "center",
+                      "fontFamily": "Poppins",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AAHYt",
+                  "name": "formBody",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    28,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yVPXz",
+                      "name": "field1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ISbzc",
+                          "fill": "#1E2A3A",
+                          "content": "Nombre *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "UPXBi",
+                          "name": "field1Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ieryn",
+                              "fill": "#9CA3AF",
+                              "content": "Escriba su nombre",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RWeWa",
+                      "name": "field2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MsP1P",
+                          "fill": "#1E2A3A",
+                          "content": "Apellidos *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pnAdD",
+                          "name": "field2Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "pHwuh",
+                              "fill": "#9CA3AF",
+                              "content": "Escriba su apellido",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dd20u",
+                      "name": "field3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "laBWu",
+                          "fill": "#1E2A3A",
+                          "content": "Documento de identidad *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "5PBne",
+                          "name": "field3Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "t9cDX",
+                              "fill": "#9CA3AF",
+                              "content": "Escriba su número de documento",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Lyic9",
+                      "name": "field4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4QHDX",
+                          "fill": "#1E2A3A",
+                          "content": "Correo electrónico *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "4gVKG",
+                          "name": "field4Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "5UZJu",
+                              "fill": "#9CA3AF",
+                              "content": "Escriba su correo electrónico",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XmMfO",
+                      "name": "field5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F6N8H",
+                          "fill": "#1E2A3A",
+                          "content": "NIT",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "9FUqH",
+                          "name": "field5Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "2qeeh",
+                              "fill": "#9CA3AF",
+                              "content": "Escriba el NIT de su empresa",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RTbgK",
+                      "name": "field6",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "53tDQ",
+                          "fill": "#1E2A3A",
+                          "content": "Nivel del cargo *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kNVtV",
+                          "name": "field6Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "9Cy2s",
+                              "fill": "#9CA3AF",
+                              "content": "Junior · Senior · Directivo · Gerente · CEO · Independiente",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "oRiA3",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "#5A6475"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "InMsa",
+                      "name": "field7",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WyZ8e",
+                          "fill": "#1E2A3A",
+                          "content": "Área del cargo *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OMr29",
+                          "name": "field7Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tyX3D",
+                              "fill": "#9CA3AF",
+                              "content": "Tecnología · Marketing · Operaciones · RRHH · Finanzas · Otro",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "PqBHr",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "#5A6475"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jhGgC",
+                      "name": "field8",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ExUa2",
+                          "fill": "#1E2A3A",
+                          "content": "Sector al que pertenece *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "eeyZd",
+                          "name": "field8Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "CJkwb",
+                              "fill": "#9CA3AF",
+                              "content": "Retail · Salud · Educación · Fintech · Manufactura · Servicios",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "GAuLF",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "#5A6475"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2iXLX",
+                      "name": "field9",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bRKWW",
+                          "fill": "#1E2A3A",
+                          "content": "Ciudad *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ukx1N",
+                          "name": "field9Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SmuZX",
+                              "fill": "#9CA3AF",
+                              "content": "Escriba su ciudad",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rjbzQ",
+                      "name": "field10",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AitJJ",
+                          "fill": "#1E2A3A",
+                          "content": "Celular *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "WEIWw",
+                          "name": "field10Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cBHhY",
+                              "fill": "#9CA3AF",
+                              "content": "Escriba su número de celular",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pPfrh",
+                      "name": "field11",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZgG9x",
+                          "fill": "#1E2A3A",
+                          "content": "Elige cuál de los siguientes temas te gustaría trabajar *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hChMI",
+                          "name": "field11Input",
+                          "width": "fill_container",
+                          "height": 36,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vuGLw",
+                              "fill": "#9CA3AF",
+                              "content": "Automatización · Análisis de Datos · Chatbots · Computer Vision",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "LbMxP",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "chevron-down",
+                              "iconFontFamily": "lucide",
+                              "fill": "#5A6475"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZAWyQ",
+                      "name": "field12",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qgKSO",
+                          "fill": "#1E2A3A",
+                          "content": "¿Qué querés resolver? *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QApAW",
+                          "name": "field12Input",
+                          "width": "fill_container",
+                          "height": 72,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#C8CDD5"
+                          },
+                          "layout": "vertical",
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6C07m",
+                              "fill": "#9CA3AF",
+                              "content": "Describí el problema o tarea que querés trabajar con IA en esta sesión...",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h7vtF",
+                      "name": "profileSection",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "G8g43",
+                          "fill": "#1E2A3A",
+                          "content": "Para finalizar, seleccioná tu perfil *",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "yNAJO",
+                          "name": "check1Row",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Tn09s",
+                              "name": "check1Box",
+                              "width": 14,
+                              "height": 14,
+                              "fill": "#FFFFFF",
+                              "cornerRadius": 2,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1,
+                                "fill": "#C8CDD5"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "FzD41",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Soy profesional con formación previa en Master IA / CCB",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Cd0hw",
+                          "name": "check2Row",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "A6hIT",
+                              "name": "check2Box",
+                              "width": 14,
+                              "height": 14,
+                              "fill": "#FFFFFF",
+                              "cornerRadius": 2,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1,
+                                "fill": "#C8CDD5"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "ZgHiZ",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Tengo un negocio o empresa registrado en Cámara de Comercio",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MGgnb",
+                      "name": "legalBlock",
+                      "width": "fill_container",
+                      "fill": "#F8F9FA",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E7EB"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rFfUY",
+                          "fill": "#5A6475",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Al marcar la siguiente casilla, autorizas expresamente el tratamiento de tus datos personales, por parte de la Cámara de Comercio de Barranquilla, conforme a la Política de tratamiento de datos personales y el Aviso de Privacidad.",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gnv3Q",
+                      "name": "datosRow",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jztja",
+                          "fill": "#1E2A3A",
+                          "content": "Tratamiento de datos personales",
+                          "fontFamily": "Poppins",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HSIBU",
+                          "name": "datosCheck",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "A852N",
+                              "name": "datosCheckBox",
+                              "width": 14,
+                              "height": 14,
+                              "fill": "#FFFFFF",
+                              "cornerRadius": 2,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1,
+                                "fill": "#C8CDD5"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "jZZ1V",
+                              "fill": "#1E2A3A",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Autorizo el tratamiento de mis datos personales",
+                              "fontFamily": "Poppins",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qxZLB",
+                      "name": "bStrip",
+                      "width": "fill_container",
+                      "fill": "#EEF2FF",
+                      "cornerRadius": 8,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YNOZi",
+                          "name": "b1",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "Z4uuo",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "circle-check",
+                              "iconFontFamily": "lucide",
+                              "fill": "#003087"
+                            },
+                            {
+                              "type": "text",
+                              "id": "2CP5f",
+                              "fill": "#003087",
+                              "content": "Sesión gratuita",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rYt9f",
+                          "name": "b2",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "vyXBH",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "circle-check",
+                              "iconFontFamily": "lucide",
+                              "fill": "#003087"
+                            },
+                            {
+                              "type": "text",
+                              "id": "7FZFR",
+                              "fill": "#003087",
+                              "content": "Sin compromisos",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "A6xr6",
+                          "name": "b3",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "fjZ9e",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "circle-check",
+                              "iconFontFamily": "lucide",
+                              "fill": "#003087"
+                            },
+                            {
+                              "type": "text",
+                              "id": "uLOE7",
+                              "fill": "#003087",
+                              "content": "Respuesta en 48h",
+                              "fontFamily": "Poppins",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Oot6l",
+                      "name": "submitBtn",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#E8470A",
+                      "cornerRadius": 4,
+                      "padding": [
+                        12,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vux9t",
+                          "fill": "#FFFFFF",
+                          "content": "SOLICITAR MI SESIÓN",
+                          "fontFamily": "Poppins",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yx0O8",
+                      "name": "tLine",
+                      "width": "fill_container",
+                      "gap": 6,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "wdnKR",
+                          "width": 13,
+                          "height": 13,
+                          "iconFontName": "shield-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#8A929E"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pGmkm",
+                          "fill": "#8A929E",
+                          "content": "+500 empresas confían en nosotros · Datos 100% protegidos",
+                          "fontFamily": "Poppins",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Jy7pq",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#002670",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Q6Zbe",
+              "name": "footerCols",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rpVaN",
+                  "name": "footerCol1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WUaDb",
+                      "name": "footerLogo",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "T71et",
+                          "name": "footerLogoIcon",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#00AEEF",
+                          "cornerRadius": 5,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "v9zz8",
+                              "fill": "#FFFFFF",
+                              "content": "B",
+                              "fontFamily": "Poppins",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "2CbJH",
+                          "fill": "#FFFFFF",
+                          "textGrowth": "fixed-width",
+                          "width": 140,
+                          "content": "CÁMARA DE COMERCIO\nDE BARRANQUILLA",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Poppins",
+                          "fontSize": 10,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "3Wt4M",
+                      "fill": "#FFFFFFD9",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Somos la agencia de desarrollo\nempresarial de la región",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Em8PQ",
+                  "name": "footerCol2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uwyYM",
+                      "fill": "#FFFFFF",
+                      "content": "Links",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L5q5Y",
+                      "fill": "#FFFFFFD9",
+                      "content": "Inicio",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TbXRL",
+                      "fill": "#FFFFFFD9",
+                      "content": "Servicios",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eMiqn",
+                      "fill": "#FFFFFFD9",
+                      "content": "ConsultorIA",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "03ia3",
+                      "fill": "#FFFFFFD9",
+                      "content": "Contáctanos",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SYb6J",
+                  "name": "footerCol3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZFuzS",
+                      "fill": "#FFFFFF",
+                      "content": "Contacto",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NKuVR",
+                      "fill": "#FFFFFFD9",
+                      "content": "Calle 74 #54-58, Barranquilla",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yBy3U",
+                      "fill": "#FFFFFFD9",
+                      "content": "+57 (605) 330 8000",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NRyUE",
+                      "fill": "#FFFFFFD9",
+                      "content": "servicios@camarabaq.org.co",
+                      "fontFamily": "Poppins",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AVhcZ",
+                      "name": "footerSocialRow",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "EsbEU",
+                          "name": "social1",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#0050C8",
+                          "cornerRadius": 16,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "48i23",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "facebook",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cmMco",
+                          "name": "social2",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#0050C8",
+                          "cornerRadius": 16,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "ywgve",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "instagram",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YBRuV",
+                          "name": "social3",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#0050C8",
+                          "cornerRadius": 16,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "zhaQV",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "linkedin",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HC0YT",
+                          "name": "social4",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#0050C8",
+                          "cornerRadius": 16,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "7yo4c",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "youtube",
+                              "iconFontFamily": "lucide",
+                              "fill": "#FFFFFF"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "1sS7W",
+              "name": "footerDivider",
+              "fill": "#FFFFFF26",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "qM1TB",
+              "name": "footerCopyright",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F3fFC",
+                  "fill": "#FFFFFF99",
+                  "content": "© 2025 Cámara de Comercio de Barranquilla — Todos los derechos reservados",
+                  "textAlign": "center",
+                  "fontFamily": "Poppins",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
