@@ -10,7 +10,7 @@ export const LeadSchema = z.object({
   company_role_level: z.string().min(1, "El nivel del cargo es requerido"),
   company_role_area: z.string().min(1, "El área del cargo es requerida"),
   solution: z.string().min(1, "Seleccioná una solución"),
-  use_case: z.string().optional(),
+  use_case: z.string().min(1, "Seleccioná un caso de uso"),
   comments: z.string().min(10, "El mensaje debe tener al menos 10 caracteres"),
   perfil_personal: z.boolean().optional(),
   perfil_empresa: z.boolean().optional(),

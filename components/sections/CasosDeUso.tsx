@@ -1,107 +1,107 @@
 const CASOS = [
-  // ── Categoría 1: Automatización de Procesos (4 casos)
+  // ── Categoría 1: Asistentes de IA Personales
   {
-    categoria: "Automatización de Procesos",
+    categoria: "Asistentes de IA Personales",
     categoriaColor: "bg-[#EEF2FF] text-[#4338CA]",
-    titulo: "Respuesta automática de correos",
+    titulo: "Evaluación de candidatos (RRHH)",
     descripcion:
-      "Clasificación y gestión inteligente del buzón de entrada. El sistema prioriza, categoriza y redacta respuestas estándar para los correos más frecuentes.",
-    herramientas: "Gmail + Make + GPT-4",
-    resultado: "-70% tiempo de bandeja",
+      "Automatiza el filtrado y análisis de CVs, identificando el perfil ideal para la vacante y generando resúmenes de competencias clave.",
+    herramientas: "Claude + PDF Reader + Airtable",
+    resultado: "Filtrado 10× más rápido",
     resultadoColor: "bg-[#ECFDF5] text-[#065F46]",
   },
   {
-    categoria: "Automatización de Procesos",
+    categoria: "Asistentes de IA Personales",
     categoriaColor: "bg-[#EEF2FF] text-[#4338CA]",
-    titulo: "Generación automática de reportes",
+    titulo: "Generación de contenido y copys",
     descripcion:
-      "Consolidación de datos de múltiples fuentes y generación de informes ejecutivos con análisis narrativo incluido, sin intervención manual.",
-    herramientas: "Excel + Power BI + GPT",
-    resultado: "5× más rápido",
+      "Creación de textos persuasivos para redes sociales, blogs y anuncios manteniendo el tono de voz de tu marca y estilo corporativo.",
+    herramientas: "ChatGPT / Jasper / Claude",
+    resultado: "Contenido 24/7",
     resultadoColor: "bg-[#ECFDF5] text-[#065F46]",
   },
   {
-    categoria: "Automatización de Procesos",
+    categoria: "Asistentes de IA Personales",
     categoriaColor: "bg-[#EEF2FF] text-[#4338CA]",
-    titulo: "Digitalización de documentos",
+    titulo: "Análisis de estados financieros",
     descripcion:
-      "Extracción automática de datos de facturas, contratos y formularios físicos con IA, eliminando la captura manual de información.",
-    herramientas: "OCR + Claude + n8n",
-    resultado: "+90% precisión",
+      "Interpretación rápida de balances, P&L y flujos de caja para identificar tendencias, anomalías y oportunidades críticas de ahorro.",
+    herramientas: "Excel AI / GPT-4 (Analysis)",
+    resultado: "Insights en segundos",
     resultadoColor: "bg-[#ECFDF5] text-[#065F46]",
   },
   {
-    categoria: "Automatización de Procesos",
+    categoria: "Asistentes de IA Personales",
     categoriaColor: "bg-[#EEF2FF] text-[#4338CA]",
-    titulo: "Flujos de aprobación inteligentes",
+    titulo: "Gestión y resumen documental",
     descripcion:
-      "Automatización de procesos de aprobación con rutas dinámicas según reglas de negocio, notificaciones automáticas y seguimiento en tiempo real.",
-    herramientas: "Slack + n8n + Zapier",
-    resultado: "-60% tiempo de demora",
+      "Procesamiento de grandes volúmenes de documentos, actas y reportes para extraer puntos clave y respuestas a consultas específicas.",
+    herramientas: "NotebookLM / Perplexity / Humata",
+    resultado: "Ahorro de lectura: 80%",
     resultadoColor: "bg-[#ECFDF5] text-[#065F46]",
   },
 
-  // ── Categoría 2: Análisis e Inteligencia (3 casos)
+  // ── Categoría 2: Agentes integrados con tu Workspace
   {
-    categoria: "Análisis e Inteligencia",
+    categoria: "Agentes integrados con tu Workspace",
     categoriaColor: "bg-[#FFF7ED] text-[#C2410C]",
-    titulo: "Predicción de ventas y demanda",
+    titulo: "Buzón de correo inteligente",
     descripcion:
-      "Modelos predictivos que analizan histórico de ventas, estacionalidad y variables externas para anticipar la demanda y optimizar el inventario.",
-    herramientas: "Python + CRM + BI",
-    resultado: "+25% precisión en forecast",
+      "Priorización automática de correos, clasificación por urgencia y redacción de borradores basados en el contexto de tus conversaciones.",
+    herramientas: "Gemini (Google) / Copilot (Outlook)",
+    resultado: "-70% tiempo en bandeja",
     resultadoColor: "bg-[#FFF7ED] text-[#C2410C]",
   },
   {
-    categoria: "Análisis e Inteligencia",
+    categoria: "Agentes integrados con tu Workspace",
     categoriaColor: "bg-[#FFF7ED] text-[#C2410C]",
-    titulo: "Monitoreo de marca y reputación",
+    titulo: "Agente de agenda y tareas",
     descripcion:
-      "Rastreo continuo de menciones en redes sociales y medios digitales con análisis de sentimiento automatizado y alertas en tiempo real.",
-    herramientas: "Brand24 + GPT + Slack",
-    resultado: "Alertas en < 5 min",
+      "Coordinación inteligente de reuniones, bloqueo de tiempo para enfoque y seguimiento automático de compromisos detectados en chats.",
+    herramientas: "Calendar + Motion / Reclaim / Copilot",
+    resultado: "+15h libres al mes",
     resultadoColor: "bg-[#FFF7ED] text-[#C2410C]",
   },
   {
-    categoria: "Análisis e Inteligencia",
+    categoria: "Agentes integrados con tu Workspace",
     categoriaColor: "bg-[#FFF7ED] text-[#C2410C]",
-    titulo: "Segmentación inteligente de clientes",
+    titulo: "Editor inteligente de documentos",
     descripcion:
-      "Clustering automático de base de clientes según comportamiento, valor y probabilidad de compra para campañas hiperpersonalizadas.",
-    herramientas: "Python + CRM + Mailchimp",
-    resultado: "+35% ROI en campañas",
+      "Co-creación de reportes y presentaciones con asistencia en tiempo real para mejorar la redacción, estructura y diseño visual.",
+    herramientas: "Google Docs (AI) / MS Word Copilot",
+    resultado: "Documentos de alto impacto",
     resultadoColor: "bg-[#FFF7ED] text-[#C2410C]",
   },
 
-  // ── Categoría 3: Generación de Contenido (3 casos)
+  // ── Categoría 3: Prototipado ágil de apps con IA
   {
-    categoria: "Generación de Contenido",
+    categoria: "Prototipado ágil de apps con IA",
     categoriaColor: "bg-[#F0FDF4] text-[#166534]",
-    titulo: "Propuestas comerciales con IA",
+    titulo: "Landing page / MVP funcional",
     descripcion:
-      "Generación automática de propuestas personalizadas a partir de datos del cliente, catálogo de productos y plantillas aprobadas por el equipo comercial.",
-    herramientas: "GPT-4 + HubSpot + Docs",
-    resultado: "10× más rápido",
+      "Creación rápida de páginas de aterrizaje y productos mínimos viables para validar ideas de negocio y captar leads en cuestión de días.",
+    herramientas: "Framer AI / V0.dev / Replit Agent",
+    resultado: "Lanzamiento en 48h",
     resultadoColor: "bg-[#F0FDF4] text-[#166534]",
   },
   {
-    categoria: "Generación de Contenido",
+    categoria: "Prototipado ágil de apps con IA",
     categoriaColor: "bg-[#F0FDF4] text-[#166534]",
-    titulo: "Chatbot de atención al cliente",
+    titulo: "Mini Apps para productividad",
     descripcion:
-      "Asistente conversacional entrenado con tu base de conocimiento para resolver consultas frecuentes, escalar casos complejos y calificar leads automáticamente.",
-    herramientas: "WhatsApp + GPT + CRM",
-    resultado: "Atención 24/7",
+      "Desarrollo de herramientas personalizadas para resolver cuellos de botella específicos y automatizar la recolección de datos en campo.",
+    herramientas: "Glide / Softr / FlutterFlow",
+    resultado: "Apps a la medida",
     resultadoColor: "bg-[#F0FDF4] text-[#166534]",
   },
   {
-    categoria: "Generación de Contenido",
+    categoria: "Prototipado ágil de apps con IA",
     categoriaColor: "bg-[#F0FDF4] text-[#166534]",
-    titulo: "Capacitación interna con IA",
+    titulo: "Tableros de Visualización",
     descripcion:
-      "Creación automática de materiales de formación, evaluaciones y rutas de aprendizaje personalizadas según el rol y nivel de cada colaborador.",
-    herramientas: "GPT + Notion + LMS",
-    resultado: "-50% costo de formación",
+      "Dashboards interactivos que conectan tus datos con IA para facilitar el análisis estratégico y la toma de decisiones basada en evidencia.",
+    herramientas: "Looker Studio / Power BI / Rows",
+    resultado: "Control total del negocio",
     resultadoColor: "bg-[#F0FDF4] text-[#166534]",
   },
 ];
@@ -116,14 +116,14 @@ export function CasosDeUso() {
         {/* Header */}
         <div className="mb-14 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">
-            Aplicaciones reales
+            Pilares de Transformación
           </p>
           <h2 className="text-3xl font-bold text-[#1E2A3A] md:text-4xl">
-            Casos de uso por área
+            ¿En qué consultoría te quieres enfocar?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base text-[#5A6470]">
-            Estos son algunos de los casos que trabajamos en cada consultoría.
-            Identificamos cuáles aplican a tu empresa y cómo implementarlos.
+          <p className="mx-auto mt-4 max-w-2xl text-base text-[#5A6470]">
+            Descubre los casos de uso reales que podemos implementar en tu negocio. 
+            Identifica el pilar que mejor resuelve tus retos actuales y lleva tu productividad al siguiente nivel.
           </p>
         </div>
 
