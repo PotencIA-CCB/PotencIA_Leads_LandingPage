@@ -237,7 +237,7 @@ export function Formulario() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="form-group">
-                <Label htmlFor="nit">NIT (Opcional)</Label>
+                <Label htmlFor="nit">NIT <span className="text-red-500">*</span></Label>
                 <Input
                   id="nit"
                   placeholder="NIT empresa"
