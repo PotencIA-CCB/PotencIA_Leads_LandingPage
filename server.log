@@ -1,0 +1,9 @@
+
+> consultor-ia-landing@0.1.0 dev
+> next dev --webpack
+
+▲ Next.js 16.2.3 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://10.255.255.254:3000
+- Environments: .env.local
+✓ Ready in 11.2s

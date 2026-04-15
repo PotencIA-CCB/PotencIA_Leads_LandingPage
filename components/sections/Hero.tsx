@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-brand py-20 md:py-28">
+    <section className="relative overflow-hidden bg-brand py-12 md:py-16">
       {/* Decorative circles */}
       <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-white/5" />
       <div className="pointer-events-none absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-sky/10" />
@@ -11,27 +11,24 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 text-center">
         {/* Eyebrow */}
         <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white/80">
-          Cámara de Comercio de Barranquilla
+          Exclusivo para Miembros Renovados 2026
         </span>
 
         {/* Headline */}
-        <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
-          Implementá{" "}
-          <span className="text-sky">Inteligencia Artificial</span>
-          {" "}en tu empresa en una sola sesión
+        <h1 className="mx-auto max-w-3xl text-2xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
+          Aplica <span className="text-sky">IA</span> en tu negocio y gana
+          productividad desde hoy
         </h1>
 
         {/* Subtitle */}
         <p className="mx-auto mt-6 max-w-2xl text-lg text-white/75">
-          ConsultorIA es un servicio personalizado de 1 a 2 horas donde un experto
-          analiza tu operación y te entrega un plan concreto de adopción de IA —
-          sin tecnicismos, listo para ejecutar.
+          En 1–2 horas sabrás exactamente cómo aplicar IA en tu empresa.
         </p>
 
         {/* CTAs */}
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-            <Link href="#formulario">Quiero mi consultoría</Link>
+            <Link href="#formulario">Reservar mi consultoría</Link>
           </Button>
           <Button
             asChild
@@ -45,7 +42,8 @@ export function Hero() {
 
         {/* Trust bar */}
         <p className="mt-12 text-sm text-white/50">
-          Sesiones individuales · Diagnóstico personalizado · Plan de acción entregable
+          Sesiones individuales · Entregables listos para utilizar ·
+          Recomendaciones prácticas
         </p>
       </div>
     </section>
