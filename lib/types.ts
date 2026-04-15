@@ -28,4 +28,5 @@ export interface CasoDeUso {
   badgeColor: string;
   metricas: MetricaCaso[];
   opciones: OpcionCaso[];
+  categoriaColor?: string;
 }
