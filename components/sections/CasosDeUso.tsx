@@ -1,108 +1,149 @@
+import { CasoCard } from "./CasoCard";
+import { ArrowDown } from "lucide-react";
+
 const CASOS = [
-  // ── Categoría 1: Asistentes de IA Personales
   {
+    id: "evaluacion-candidatos",
     categoria: "Asistentes de IA Personales",
-    categoriaColor: "bg-[#EEF2FF] text-[#4338CA]",
     titulo: "Evaluación de candidatos (RRHH)",
     descripcion:
       "Automatiza el filtrado y análisis de CVs, identificando el perfil ideal para la vacante y generando resúmenes de competencias clave.",
-    herramientas: "Claude + PDF Reader + Airtable",
-    resultado: "Filtrado 10× más rápido",
-    resultadoColor: "bg-[#ECFDF5] text-[#065F46]",
+    badge: "Gestión & Productividad",
+    badgeColor: "bg-[#EEF2FF] text-[#4338CA]",
+    metricas: [
+      { valor: "⏱️", etiqueta: "Filtrado 10× más rápido" },
+      { valor: "🚀", etiqueta: "Mayor eficiencia" },
+    ],
+    opciones: [
+      {
+        titulo: "Evaluación de candidatos",
+        descripcion: "Proceso automatizado de筛选 de CVs",
+        requisitos: ["5-10 PDFs de hojas de vida"],
+      },
+    ],
   },
   {
+    id: "generacion-contenido",
     categoria: "Asistentes de IA Personales",
-    categoriaColor: "bg-[#EEF2FF] text-[#4338CA]",
     titulo: "Generación de contenido y copys",
     descripcion:
-      "Creación de textos persuasivos para redes sociales, blogs y anuncios manteniendo el tono de voz de tu marca y estilo corporativo.",
-    herramientas: "ChatGPT / Jasper / Claude",
-    resultado: "Contenido 24/7",
-    resultadoColor: "bg-[#ECFDF5] text-[#065F46]",
+      "Creación de textos persuasivos para redes sociales, blogs y anuncios manteniendo el tono de voz de tu marca.",
+    badge: "Marketing",
+    badgeColor: "bg-[#EEF2FF] text-[#4338CA]",
+    metricas: [
+      { valor: "📝", etiqueta: "Contenido 24/7" },
+    ],
+    opciones: [
+      {
+        titulo: "Generación de contenido",
+        descripcion: "Copys y contenido para redes",
+        requisitos: ["Objetivos de la campaña"],
+      },
+    ],
   },
   {
+    id: "analisis-financiero",
     categoria: "Asistentes de IA Personales",
-    categoriaColor: "bg-[#EEF2FF] text-[#4338CA]",
     titulo: "Análisis de estados financieros",
     descripcion:
-      "Interpretación rápida de balances, P&L y flujos de caja para identificar tendencias, anomalías y oportunidades críticas de ahorro.",
-    herramientas: "Excel AI / GPT-4 (Analysis)",
-    resultado: "Insights en segundos",
-    resultadoColor: "bg-[#ECFDF5] text-[#065F46]",
+      "Interpretación rápida de balances, P&L y flujos de caja para identificar tendencias y oportunidades.",
+    badge: "Finanzas",
+    badgeColor: "bg-[#EEF2FF] text-[#4338CA]",
+    metricas: [
+      { valor: "📊", etiqueta: "Insights en segundos" },
+    ],
+    opciones: [],
   },
   {
+    id: "gestion-documental",
     categoria: "Asistentes de IA Personales",
-    categoriaColor: "bg-[#EEF2FF] text-[#4338CA]",
     titulo: "Gestión y resumen documental",
     descripcion:
-      "Procesamiento de grandes volúmenes de documentos, actas y reportes para extraer puntos clave y respuestas a consultas específicas.",
-    herramientas: "NotebookLM / Perplexity / Humata",
-    resultado: "Ahorro de lectura: 80%",
-    resultadoColor: "bg-[#ECFDF5] text-[#065F46]",
+      "Procesamiento de grandes volúmenes de documentos para extraer puntos clave.",
+    badge: "Administración",
+    badgeColor: "bg-[#EEF2FF] text-[#4338CA]",
+    metricas: [
+      { valor: "📚", etiqueta: "Ahorro de lectura: 80%" },
+    ],
+    opciones: [],
   },
-
-  // ── Categoría 2: Agentes integrados con tu Workspace
   {
+    id: "buzon-inteligente",
     categoria: "Agentes integrados con tu Workspace",
-    categoriaColor: "bg-[#FFF7ED] text-[#C2410C]",
     titulo: "Buzón de correo inteligente",
     descripcion:
-      "Priorización automática de correos, clasificación por urgencia y redacción de borradores basados en el contexto de tus conversaciones.",
-    herramientas: "Gemini (Google) / Copilot (Outlook)",
-    resultado: "-70% tiempo en bandeja",
-    resultadoColor: "bg-[#FFF7ED] text-[#C2410C]",
+      "Priorización automática de correos, clasificación por urgencia y redacción de borradores.",
+    badge: "Automatización",
+    badgeColor: "bg-[#FFF7ED] text-[#C2410C]",
+    metricas: [
+      { valor: "📧", etiqueta: "-70% tiempo en bandeja" },
+    ],
+    opciones: [],
   },
   {
+    id: "agente-agenda",
     categoria: "Agentes integrados con tu Workspace",
-    categoriaColor: "bg-[#FFF7ED] text-[#C2410C]",
     titulo: "Agente de agenda y tareas",
     descripcion:
-      "Coordinación inteligente de reuniones, bloqueo de tiempo para enfoque y seguimiento automático de compromisos detectados en chats.",
-    herramientas: "Calendar + Motion / Reclaim / Copilot",
-    resultado: "+15h libres al mes",
-    resultadoColor: "bg-[#FFF7ED] text-[#C2410C]",
+      "Coordinación inteligente de reuniones y bloqueo de tiempo para enfoque.",
+    badge: "Productividad",
+    badgeColor: "bg-[#FFF7ED] text-[#C2410C]",
+    metricas: [
+      { valor: "📅", etiqueta: "+15h libres al mes" },
+    ],
+    opciones: [],
   },
   {
+    id: "editor-documentos",
     categoria: "Agentes integrados con tu Workspace",
-    categoriaColor: "bg-[#FFF7ED] text-[#C2410C]",
     titulo: "Editor inteligente de documentos",
     descripcion:
-      "Co-creación de reportes y presentaciones con asistencia en tiempo real para mejorar la redacción, estructura y diseño visual.",
-    herramientas: "Google Docs (AI) / MS Word Copilot",
-    resultado: "Documentos de alto impacto",
-    resultadoColor: "bg-[#FFF7ED] text-[#C2410C]",
+      "Co-creación de reportes y presentaciones con asistencia en tiempo real.",
+    badge: "Escritura",
+    badgeColor: "bg-[#FFF7ED] text-[#C2410C]",
+    metricas: [
+      { valor: "✍️", etiqueta: "Documentos de alto impacto" },
+    ],
+    opciones: [],
   },
-
-  // ── Categoría 3: Prototipado ágil de apps con IA
   {
+    id: "landing-page",
     categoria: "Prototipado ágil de apps con IA",
-    categoriaColor: "bg-[#F0FDF4] text-[#166534]",
     titulo: "Landing page / MVP funcional",
     descripcion:
-      "Creación rápida de páginas de aterrizaje y productos mínimos viables para validar ideas de negocio y captar leads en cuestión de días.",
-    herramientas: "Framer AI / V0.dev / Replit Agent",
-    resultado: "Lanzamiento en 48h",
-    resultadoColor: "bg-[#F0FDF4] text-[#166534]",
+      "Creación rápida de páginas de aterrizaje para validar ideas de negocio.",
+    badge: "Desarrollo",
+    badgeColor: "bg-[#F0FDF4] text-[#166534]",
+    metricas: [
+      { valor: "⚡", etiqueta: "Lanzamiento en 48h" },
+    ],
+    opciones: [],
   },
   {
+    id: "mini-apps",
     categoria: "Prototipado ágil de apps con IA",
-    categoriaColor: "bg-[#F0FDF4] text-[#166534]",
     titulo: "Mini Apps para productividad",
     descripcion:
-      "Desarrollo de herramientas personalizadas para resolver cuellos de botella específicos y automatizar la recolección de datos en campo.",
-    herramientas: "Glide / Softr / FlutterFlow",
-    resultado: "Apps a la medida",
-    resultadoColor: "bg-[#F0FDF4] text-[#166534]",
+      "Desarrollo de herramientas personalizadas para automatizar procesos.",
+    badge: "No-Code",
+    badgeColor: "bg-[#F0FDF4] text-[#166534]",
+    metricas: [
+      { valor: "🛠️", etiqueta: "Apps a la medida" },
+    ],
+    opciones: [],
   },
   {
+    id: "dashboards",
     categoria: "Prototipado ágil de apps con IA",
-    categoriaColor: "bg-[#F0FDF4] text-[#166534]",
     titulo: "Tableros de Visualización",
     descripcion:
-      "Dashboards interactivos que conectan tus datos con IA para facilitar el análisis estratégico y la toma de decisiones basada en evidencia.",
-    herramientas: "Looker Studio / Power BI / Rows",
-    resultado: "Control total del negocio",
-    resultadoColor: "bg-[#F0FDF4] text-[#166534]",
+      "Dashboards interactivos que conectan tus datos con IA para análisis estratégico.",
+    badge: "Analítica",
+    badgeColor: "bg-[#F0FDF4] text-[#166534]",
+    metricas: [
+      { valor: "📈", etiqueta: "Control total del negocio" },
+    ],
+    opciones: [],
   },
 ];
 
