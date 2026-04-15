@@ -3,7 +3,6 @@ import type { CasoDeUso } from "./types";
 export const BOOKING_URL =
   "https://outlook.office.com/book/ConsultorioIAPotencia@camarabaq.org.co/s/QjoGRR4GKkaZOr2d9kGq2A2?ismsaljsauthenabled";
 
-// ── Casos de Uso con 3 categorías expandibles
 export const CASOS: CasoDeUso[] = [
   {
     id: "asistente-ia",

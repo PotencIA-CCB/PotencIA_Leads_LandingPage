@@ -21,9 +21,9 @@ import {
 type FormData = z.infer<typeof LeadSchema>;
 
 const SOLUTIONS = [
-  { value: "asistente", label: "Asistente IA" },
-  { value: "agentes", label: "Agentes Automatizados" },
-  { value: "prototipado", label: "Prototipado con IA" },
+  { value: "asistente", label: "Asistentes de IA Personales" },
+  { value: "agentes", label: "Agentes Integrados con tu Workspace" },
+  { value: "prototipado", label: "Prototipado ágil de Apps" },
 ];
 
 const ROLE_LEVELS = [
@@ -68,20 +68,20 @@ const ROLE_AREAS = [
 
 const USE_CASES: Record<string, string[]> = {
   asistente: [
-    "Recursos Humanos (Analista de Hojas de Vida)",
-    "Marketing (Redactor de Contenido)",
-    "Finanzas (Analizador de Estados Financieros)",
-    "Operaciones (Gestor de Documentos)",
+    "Evaluación de candidatos (RRHH)",
+    "Generación de contenido y copys",
+    "Análisis de estados financieros",
+    "Gestión y resumen documental",
   ],
   agentes: [
-    "Gmail (Buzón de Correo Inteligente)",
-    "Calendar + Docs (Agente de Agenda y Tareas)",
-    "Google Docs (Editor Inteligente de Documentos)",
+    "Buzón de correo inteligente",
+    "Agente de agenda y tareas",
+    "Editor inteligente de documentos",
   ],
   prototipado: [
-    "Páginas Web (Landings / MVP)",
-    "Aplicaciones Personales (Mini SaaS)",
-    "Dashboards Interactivos (KPIs)",
+    "Landing page / MVP funcional",
+    "Mini Apps para productividad",
+    "Tableros de Visualización",
   ],
 };
 
@@ -213,9 +213,9 @@ export function Formulario() {
             className="flex flex-col gap-4 p-8"
             noValidate
           >
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px" }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="form-group">
-                <Label htmlFor="full_name">Nombre Completo</Label>
+                <Label htmlFor="full_name">Nombre Completo <span className="text-red-500">*</span></Label>
                 <Input
                   id="full_name"
                   placeholder="Ej. Juan Pérez"
@@ -224,7 +224,7 @@ export function Formulario() {
                 <FieldError message={errors.full_name?.message} />
               </div>
               <div className="form-group">
-                <Label htmlFor="id_num">Documento de Identidad</Label>
+                <Label htmlFor="id_num">Documento de Identidad <span className="text-red-500">*</span></Label>
                 <Input
                   id="id_num"
                   type="number"
@@ -235,9 +235,9 @@ export function Formulario() {
               </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px" }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="form-group">
-                <Label htmlFor="nit">NIT</Label>
+                <Label htmlFor="nit">NIT <span className="text-red-500">*</span></Label>
                 <Input
                   id="nit"
                   placeholder="NIT empresa"
@@ -246,7 +246,7 @@ export function Formulario() {
                 <FieldError message={errors.nit?.message} />
               </div>
               <div className="form-group">
-                <Label htmlFor="email">Correo Electrónico</Label>
+                <Label htmlFor="email">Correo Electrónico <span className="text-red-500">*</span></Label>
                 <Input
                   id="email"
                   type="email"
@@ -257,9 +257,9 @@ export function Formulario() {
               </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px" }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="form-group">
-                <Label htmlFor="phone">Celular</Label>
+                <Label htmlFor="phone">Celular <span className="text-red-500">*</span></Label>
                 <Input
                   id="phone"
                   placeholder="300 000 0000"
@@ -268,7 +268,7 @@ export function Formulario() {
                 <FieldError message={errors.phone?.message} />
               </div>
               <div className="form-group">
-                <Label htmlFor="city">Ciudad</Label>
+                <Label htmlFor="city">Ciudad <span className="text-red-500">*</span></Label>
                 <Input
                   id="city"
                   placeholder="Ej. Bogotá"
@@ -278,9 +278,9 @@ export function Formulario() {
               </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px" }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="form-group">
-                <Label>Nivel del cargo</Label>
+                <Label>Nivel del cargo <span className="text-red-500">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("company_role_level", v, { shouldValidate: true })}
                 >
@@ -298,7 +298,7 @@ export function Formulario() {
                 <FieldError message={errors.company_role_level?.message} />
               </div>
               <div className="form-group">
-                <Label>Área del cargo</Label>
+                <Label>Área del cargo <span className="text-red-500">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("company_role_area", v, { shouldValidate: true })}
                 >
@@ -318,7 +318,7 @@ export function Formulario() {
             </div>
 
             <div className="form-group">
-              <Label>Solución de Interés</Label>
+              <Label>Solución de Interés <span className="text-red-500">*</span></Label>
               <Select
                 onValueChange={(v) => {
                   setValue("solution", v, { shouldValidate: true });
@@ -341,7 +341,7 @@ export function Formulario() {
 
             {showUseCase && solutionValue && USE_CASES[solutionValue] && (
               <div className="form-group">
-                <Label>Tipo de Caso de Uso</Label>
+                <Label>Tipo de Caso de Uso <span className="text-red-500">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("use_case", v, { shouldValidate: true })}
                 >
@@ -361,7 +361,7 @@ export function Formulario() {
             )}
 
             <div className="form-group">
-              <Label htmlFor="comments">Cuéntanos sobre tu proyecto</Label>
+              <Label htmlFor="comments">Cuéntanos sobre tu proyecto <span className="text-red-500">*</span></Label>
               <Textarea
                 id="comments"
                 placeholder="Describe tus necesidades, objetivos o el problema que querés resolver..."
