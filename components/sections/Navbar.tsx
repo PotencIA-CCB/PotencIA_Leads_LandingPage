@@ -2,8 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const NAV_LINKS = [
-  { label: "Beneficios", href: "#beneficios" },
-  { label: "Metodología", href: "#metodologia" },
+  { label: "Metodología", href: "#servicio" },
   { label: "Casos de Uso", href: "#casos-de-uso" },
 ];
 

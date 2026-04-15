@@ -24,8 +24,7 @@ export function Footer() {
             </p>
             <ul className="space-y-2 text-sm text-white/70">
               {[
-                ["Beneficios", "#beneficios"],
-                ["Metodología", "#metodologia"],
+                ["El Servicio", "#servicio"],
                 ["Casos de Uso", "#casos-de-uso"],
                 ["Formulario", "#formulario"],
               ].map(([label, href]) => (
