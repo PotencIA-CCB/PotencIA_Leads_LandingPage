@@ -266,10 +266,17 @@ export function ServicioUnificado({ id = "servicio" }: ServicioUnificadoProps) {
     <section id={id} className="bg-surface-alt py-20">
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
-        <SectionHeader
-          title="Cómo funciona tu sesión"
-          subtitle="Una sesión estratégica enfocada en resultados concretos para tu negocio"
-        />
+        <div className="mb-14 text-center">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">
+            Metodología
+          </p>
+          <h2 className="text-3xl font-bold text-[#1E2A3A] md:text-4xl">
+            Cómo funciona tu sesión
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-[#5A6470]">
+            Una sesión estratégica enfocada en resultados concretos para tu negocio
+          </p>
+        </div>
 
         {/* 2-column grid: Process (left) + Results (right) - same height */}
         <div className="grid gap-6 md:grid-cols-2">

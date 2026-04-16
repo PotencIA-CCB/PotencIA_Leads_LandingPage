@@ -6,7 +6,7 @@ export const BOOKING_URL =
 export const CASOS: CasoDeUso[] = [
   {
     id: "asistente-ia",
-    titulo: "Asistente IA",
+    titulo: "Asistentes de IA",
     descripcion:
       "Encargado de asistirte en tus tareas rutinarias, liberando tu tiempo para decisiones estratégicas de alto valor para tu área.",
     badge: "Gestión & Productividad",
@@ -58,10 +58,10 @@ export const CASOS: CasoDeUso[] = [
   },
   {
     id: "agentes-ia",
-    titulo: "Agentes IA",
+    titulo: "Agentes integrados con tu workspace",
     descripcion:
       "Potencia tu ecosistema de trabajo con agentes inteligentes que gestionan tu información, agenda y documentos de forma proactiva.",
-    badge: "Automatización",
+    badge: "Integraciones básicas ",
     badgeColor: "bg-sky/10 text-sky",
     metricas: [
       { valor: "📧", etiqueta: "Menos tiempo en revisar emails" },
@@ -99,10 +99,10 @@ export const CASOS: CasoDeUso[] = [
   },
   {
     id: "prototipado-agil",
-    titulo: "Prototipado Ágil",
+    titulo: "Prototipado ágil de apps con IA",
     descripcion:
       "Transforma ideas en productos digitales funcionales en cuestión de horas utilizando herramientas de IA generativa y plataformas No-Code de última generación.",
-    badge: "Implementación",
+    badge: "Demo desplegada en pocas horas",
     badgeColor: "bg-sky/10 text-sky",
     metricas: [
       { valor: "⚡", etiqueta: "Prototipos en tiempo record" },

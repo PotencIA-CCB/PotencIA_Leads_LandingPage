@@ -14,7 +14,7 @@ export function CasoCard({ caso }: CasoCardProps) {
     <Accordion.Root type="multiple" className="group">
       <Accordion.Item
         value={caso.id}
-        className="flex w-full flex-col overflow-hidden rounded-2xl border border-[#E5E7EB] bg-white shadow-sm transition-all duration-200 hover:shadow-lg"
+        className="flex w-full flex-col overflow-hidden rounded-2xl border border-[#E5E7EB] bg-white shadow-sm transition-all duration-200 hover:shadow-lg hover:bg-[#F9FAFB] min-h-[210px]"
       >
         {/* Header (always visible) */}
         <Accordion.Trigger className="group flex w-full shrink-0 flex-col gap-3 p-5 text-left transition-colors duration-150 hover:bg-[#F9FAFB] data-[state=open]:bg-[#F8FAFC] active:bg-[#F2F4F7]">
@@ -32,7 +32,7 @@ export function CasoCard({ caso }: CasoCardProps) {
               </span>
 
               {/* Title */}
-              <h3 className="text-lg font-bold text-[#1E2A3A] group-data-[state=open]:text-brand truncate">
+              <h3 className="text-lg font-bold text-[#1E2A3A] group-data-[state=open]:text-brand">
                 {caso.titulo}
               </h3>
             </div>
