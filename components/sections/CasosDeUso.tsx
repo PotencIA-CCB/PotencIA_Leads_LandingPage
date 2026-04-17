@@ -21,7 +21,7 @@ export function CasosDeUso() {
         </div>
 
         {/* Grid de 3 columnas */}
-        <div className="grid gap-6 md:grid-cols-3 sm:grid-cols-1">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {CASOS.map((caso) => (
             <CasoCard key={caso.id} caso={caso} />
           ))}

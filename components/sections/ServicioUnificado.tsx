@@ -1,13 +1,3 @@
-// ============================================================================
-// ServicioUnificado Component
-// Unified section combining: process flow, deliverables, and scope boundaries
-// Replaces: ComoFunciona, Beneficios, Metodologia, AntesDuranteDespues
-// ============================================================================
-
-// ---------------------------------------------------------------------------
-// Type Definitions
-// ---------------------------------------------------------------------------
-
 interface Step {
   number: number;
   title: string;
@@ -39,10 +29,6 @@ interface DisclaimerProps {
 interface ServicioUnificadoProps {
   id?: string;
 }
-
-// ---------------------------------------------------------------------------
-// Data
-// ---------------------------------------------------------------------------
 
 const STEPS: Step[] = [
   {
@@ -97,10 +83,6 @@ const NO_INCLUYE: ExcludedItem[] = [
   { text: "Compromisos posteriores a la sesión" },
 ];
 
-// ---------------------------------------------------------------------------
-// Sub-components
-// ---------------------------------------------------------------------------
-
 // Green checkmark SVG icon
 function CheckIcon({ className }: { className?: string }) {
   return (
@@ -151,7 +133,7 @@ function SectionHeader({ title, subtitle }: SectionHeaderProps) {
 
 function ProcessTimeline({ steps }: ProcessTimelineProps) {
   return (
-    <div className="rounded-xl border border-[#E5E7EB] bg-white p-6 shadow-sm">
+    <div className="w-full rounded-xl border border-[#E5E7EB] bg-white p-6 shadow-sm">
       <h3 className="mb-6 text-lg font-semibold text-[#1E2A3A]">
         El proceso paso a paso
       </h3>
@@ -159,7 +141,7 @@ function ProcessTimeline({ steps }: ProcessTimelineProps) {
       {/* Timeline container with connecting line */}
       <div className="relative">
         {/* Horizontal connector line */}
-        <div className="absolute left-8 right-8 top-10 hidden h-0.5 bg-[#E5E7EB] md:block" />
+        <div className="absolute left-8 right-8 top-5 hidden h-0.5 bg-[#E5E7EB] md:block" />
 
         <div className="flex flex-col gap-6 md:flex-row md:justify-between">
           {steps.map((step, index) => (
@@ -210,7 +192,7 @@ function ResultsChecklist() {
       </h3>
 
       {/* 3 Cards - horizontal */}
-      <div className="flex flex-1 flex-col gap-4 md:flex-row">
+      <div className="flex flex-1 flex-col gap-4 lg:flex-row">
         {CARDS.map((card) => (
           <div
             key={card.titulo}
@@ -257,10 +239,6 @@ function Disclaimer({ text }: DisclaimerProps) {
   );
 }
 
-// ---------------------------------------------------------------------------
-// Main Component
-// ---------------------------------------------------------------------------
-
 export function ServicioUnificado({ id = "servicio" }: ServicioUnificadoProps) {
   return (
     <section id={id} className="bg-surface-alt py-20">
@@ -279,9 +257,9 @@ export function ServicioUnificado({ id = "servicio" }: ServicioUnificadoProps) {
         </div>
 
         {/* 2-column grid: Process (left) + Results (right) - same height */}
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-2">
           {/* Left Column: Process Timeline */}
-          <div className="flex h-full">
+          <div className="flex h-full w-full">
             <ProcessTimeline steps={STEPS} />
           </div>
 
@@ -293,7 +271,7 @@ export function ServicioUnificado({ id = "servicio" }: ServicioUnificadoProps) {
         <NoIncluyeRow items={NO_INCLUYE} />
 
         {/* Disclaimer */}
-        <Disclaimer text="Es una sesión estratégica, no ejecución." />
+        <Disclaimer text="Es una sesión 1 a 1 de implementación guiada: trabajamos contigo en tus propios casos." />
       </div>
     </section>
   );

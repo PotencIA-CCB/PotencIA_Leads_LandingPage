@@ -178,30 +178,12 @@ export function Formulario() {
     <section id="formulario" className="bg-brand py-20">
       <div className="mx-auto max-w-3xl px-6">
         <div className="rounded-2xl bg-white shadow-xl overflow-hidden">
-          {/* Header azul */}
-          <div
-            style={{
-              background: "#0066cc",
-              padding: "24px 32px",
-              textAlign: "center",
-            }}
-          >
-            <h3
-              style={{
-                color: "white",
-                fontWeight: "800",
-                fontSize: "1.75rem",
-                marginBottom: "4px",
-              }}
-            >
+          {/* Header */}
+          <div className="bg-sky px-8 py-6 text-center">
+            <h3 className="mb-1 text-2xl font-extrabold text-white">
               Registra tu Solicitud
             </h3>
-            <p
-              style={{
-                color: "rgba(255,255,255,0.85)",
-                fontSize: "1rem",
-              }}
-            >
+            <p className="text-base text-white/85">
               Recibe una propuesta personalizada
             </p>
           </div>
@@ -214,7 +196,7 @@ export function Formulario() {
             noValidate
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="form-group">
+              <div>
                 <Label htmlFor="full_name">Nombre Completo <span className="text-red-500">*</span></Label>
                 <Input
                   id="full_name"
@@ -223,11 +205,11 @@ export function Formulario() {
                 />
                 <FieldError message={errors.full_name?.message} />
               </div>
-              <div className="form-group">
+              <div>
                 <Label htmlFor="id_num">Documento de Identidad <span className="text-red-500">*</span></Label>
                 <Input
                   id="id_num"
-                  type="number"
+                  type="tel"
                   placeholder="Ej. 123456789"
                   {...register("id_num")}
                 />
@@ -236,7 +218,7 @@ export function Formulario() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="form-group">
+              <div>
                 <Label htmlFor="nit">NIT <span className="text-red-500">*</span></Label>
                 <Input
                   id="nit"
@@ -245,7 +227,7 @@ export function Formulario() {
                 />
                 <FieldError message={errors.nit?.message} />
               </div>
-              <div className="form-group">
+              <div>
                 <Label htmlFor="email">Correo Electrónico <span className="text-red-500">*</span></Label>
                 <Input
                   id="email"
@@ -258,7 +240,7 @@ export function Formulario() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="form-group">
+              <div>
                 <Label htmlFor="phone">Celular <span className="text-red-500">*</span></Label>
                 <Input
                   id="phone"
@@ -267,7 +249,7 @@ export function Formulario() {
                 />
                 <FieldError message={errors.phone?.message} />
               </div>
-              <div className="form-group">
+              <div>
                 <Label htmlFor="city">Ciudad <span className="text-red-500">*</span></Label>
                 <Input
                   id="city"
@@ -279,7 +261,7 @@ export function Formulario() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="form-group">
+              <div>
                 <Label>Nivel del cargo <span className="text-red-500">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("company_role_level", v, { shouldValidate: true })}
@@ -297,7 +279,7 @@ export function Formulario() {
                 </Select>
                 <FieldError message={errors.company_role_level?.message} />
               </div>
-              <div className="form-group">
+              <div>
                 <Label>Área del cargo <span className="text-red-500">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("company_role_area", v, { shouldValidate: true })}
@@ -317,7 +299,7 @@ export function Formulario() {
               </div>
             </div>
 
-            <div className="form-group">
+            <div>
               <Label>Solución de Interés <span className="text-red-500">*</span></Label>
               <Select
                 onValueChange={(v) => {
@@ -340,7 +322,7 @@ export function Formulario() {
             </div>
 
             {showUseCase && solutionValue && USE_CASES[solutionValue] && (
-              <div className="form-group">
+              <div>
                 <Label>Tipo de Caso de Uso <span className="text-red-500">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("use_case", v, { shouldValidate: true })}
@@ -360,7 +342,7 @@ export function Formulario() {
               </div>
             )}
 
-            <div className="form-group">
+            <div>
               <Label htmlFor="comments">Cuéntanos sobre tu proyecto <span className="text-red-500">*</span></Label>
               <Textarea
                 id="comments"
@@ -372,38 +354,38 @@ export function Formulario() {
             </div>
 
             {/* Perfil */}
-            <div style={{ marginTop: "10px" }}>
-              <p style={{ fontWeight: "600", marginBottom: "10px", color: "#1E2A3A" }}>
-                Para finalizar tu registro, seleccioná tu perfil<span style={{ color: "red" }}>*</span>
+            <div className="mt-2.5">
+              <p className="mb-2.5 font-semibold text-[#1E2A3A]">
+                Para finalizar tu registro, seleccioná tu perfil<span className="text-red-500">*</span>
               </p>
-              <label style={{ display: "flex", alignItems: "flex-start", gap: "8px", cursor: "pointer", marginBottom: "8px" }}>
+              <label className="mb-2 flex cursor-pointer items-start gap-2">
                 <input
                   type="checkbox"
                   checked={perfilPersonal === true}
                   onChange={(e) => setValue("perfil_personal", e.target.checked, { shouldValidate: true })}
-                  style={{ marginTop: "4px" }}
+                  className="mt-1 shrink-0"
                 />
-                <span style={{ color: "#5A6470", fontSize: "0.9rem" }}>No tengo NIT, tengo un interés puramente personal y/o profesional</span>
+                <span className="text-sm text-[#5A6470]">No tengo NIT, tengo un interés puramente personal y/o profesional</span>
               </label>
-              <label style={{ display: "flex", alignItems: "flex-start", gap: "8px", cursor: "pointer" }}>
+              <label className="flex cursor-pointer items-start gap-2">
                 <input
                   type="checkbox"
                   checked={perfilEmpresa === true}
                   onChange={(e) => setValue("perfil_empresa", e.target.checked, { shouldValidate: true })}
-                  style={{ marginTop: "4px" }}
+                  className="mt-1 shrink-0"
                 />
-                <span style={{ color: "#5A6470", fontSize: "0.9rem" }}>Hago parte o tengo un negocio registrado en Cámara de Comercio</span>
+                <span className="text-sm text-[#5A6470]">Hago parte o tengo un negocio registrado en Cámara de Comercio</span>
               </label>
             </div>
 
             {/* Consentimiento */}
-            <p style={{ fontSize: "0.85rem", color: "#5A6470", marginTop: "15px", lineHeight: "1.5" }}>
+            <p className="mt-4 text-xs leading-relaxed text-[#5A6470]">
               Al marcar la siguiente casilla, autorizás expresamente el tratamiento de sus datos personales, por parte de la Cámara de Comercio de Barranquilla, conforme a la{" "}
               <a
                 href="https://www.camarabaq.org.co/acerca-de-nosotros/politica-de-privacidad-de-datos-personales-de-la-camara-de-comercio-de-barranquilla/"
                 target="_blank"
-                rel="noopener"
-                style={{ color: "#0066cc", textDecoration: "underline" }}
+                rel="noopener noreferrer"
+                className="text-brand underline"
               >
                 Política de tratamiento de datos personales
               </a>{" "}
@@ -411,46 +393,38 @@ export function Formulario() {
               <a
                 href="https://www.camarabaq.org.co/wp-content/uploads/2023/08/privacidad.pdf"
                 target="_blank"
-                rel="noopener"
-                style={{ color: "#0066cc", textDecoration: "underline" }}
+                rel="noopener noreferrer"
+                className="text-brand underline"
               >
                 Aviso de Privacidad
               </a>
             </p>
 
-            <div style={{ marginTop: "10px" }}>
-              <p style={{ fontWeight: "600", marginBottom: "8px", color: "#1E2A3A" }}>Tratamiento de datos personales</p>
-              <label style={{ display: "flex", alignItems: "flex-start", gap: "8px", cursor: "pointer" }}>
+            <div className="mt-2.5">
+              <p className="mb-2 font-semibold text-[#1E2A3A]">Tratamiento de datos personales</p>
+              <label className="flex cursor-pointer items-start gap-2">
                 <input
                   type="checkbox"
                   {...register("autorizo_datos")}
-                  style={{ marginTop: "4px" }}
+                  className="mt-1 shrink-0"
                 />
-                <span style={{ color: "#5A6470", fontSize: "0.9rem" }}>Autorizo el tratamiento de mis datos personales</span>
+                <span className="text-sm text-[#5A6470]">Autorizo el tratamiento de mis datos personales</span>
               </label>
               <FieldError message={errors.autorizo_datos?.message} />
             </div>
 
             {status === "error" && (
-              <p
-                style={{
-                  color: "#e53e3e",
-                  fontSize: "0.9rem",
-                  textAlign: "center",
-                  marginTop: "8px",
-                }}
-              >
+              <p className="mt-2 text-center text-sm text-red-600">
                 {errorMessage || "Hubo un error al enviar el formulario. Por favor intentá de nuevo."}
               </p>
             )}
 
-            <div style={{ marginTop: "10px" }}>
+            <div className="mt-2.5">
               <Button
                 type="submit"
                 size="lg"
-                className="w-full"
+                className="w-full bg-accent hover:bg-accent/90"
                 disabled={status === "loading"}
-                style={{ background: "#FF6B35" }}
               >
                 {status === "loading" ? "Enviando..." : "Enviar Solicitud 📧"}
               </Button>

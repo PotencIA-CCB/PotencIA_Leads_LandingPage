@@ -11,10 +11,10 @@ interface CasoCardProps {
 
 export function CasoCard({ caso }: CasoCardProps) {
   return (
-    <Accordion.Root type="multiple" className="group">
+    <Accordion.Root type="multiple">
       <Accordion.Item
         value={caso.id}
-        className="flex w-full flex-col overflow-hidden rounded-2xl border border-[#E5E7EB] bg-white shadow-sm transition-all duration-200 hover:shadow-lg hover:bg-[#F9FAFB] min-h-[210px]"
+        className="group flex w-full flex-col overflow-hidden rounded-2xl border border-[#E5E7EB] bg-white shadow-sm transition-all duration-200 hover:shadow-lg hover:bg-[#F9FAFB] min-h-[210px]"
       >
         {/* Header (always visible) */}
         <Accordion.Trigger className="group flex w-full shrink-0 flex-col gap-3 p-5 text-left transition-colors duration-150 hover:bg-[#F9FAFB] data-[state=open]:bg-[#F8FAFC] active:bg-[#F2F4F7]">
@@ -72,7 +72,7 @@ export function CasoCard({ caso }: CasoCardProps) {
                   className="rounded-lg border border-[#E5E7EB]"
                 >
                   <Accordion.Trigger className="group flex w-full items-center justify-between bg-[#F9FAFB] px-3 py-2.5 text-left hover:bg-[#F2F4F7]">
-                    <span className="text-sm font-medium text-[#1E2A3A] truncate pr-2">
+                    <span className="min-w-0 truncate pr-2 text-sm font-medium text-[#1E2A3A]">
                       {opcion.titulo}
                     </span>
                     <ChevronDown className="size-4 shrink-0 text-[#9CA3AF] transition-transform duration-300 group-data-[state=open]:rotate-180" />
