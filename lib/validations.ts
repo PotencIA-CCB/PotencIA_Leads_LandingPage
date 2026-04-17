@@ -19,4 +19,4 @@ export const LeadSchema = z.object({
   }),
 });
 
-export type LeadInput = z.infer<typeof LeadSchema>;
+export interface LeadInput extends z.infer<typeof LeadSchema> {}

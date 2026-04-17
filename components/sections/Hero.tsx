@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-brand py-12 md:py-16">
+    <section className="bg-brand-hero relative overflow-hidden py-12 md:py-16">
       {/* Decorative circles */}
       <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-white/5" />
-      <div className="pointer-events-none absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-sky/10" />
+      <div className="pointer-events-none absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-accent/15" />
 
       <div className="relative mx-auto max-w-7xl px-6 text-center">
         {/* Eyebrow */}
@@ -15,8 +15,8 @@ export function Hero() {
         </span>
 
         {/* Headline */}
-        <h1 className="mx-auto max-w-3xl text-2xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
-          Aplica <span className="text-sky">IA</span> en tu negocio y gana
+        <h1 className="mx-auto max-w-3xl font-heading text-2xl font-bold leading-tight text-surface md:text-4xl lg:text-5xl">
+          Aplica <span className="text-accent">IA</span> en tu negocio y gana
           productividad desde hoy
         </h1>
 
@@ -27,14 +27,14 @@ export function Hero() {
 
         {/* CTAs */}
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
+          <Button asChild size="lg" variant="accent">
             <Link href="#formulario">Reservar mi consultoría</Link>
           </Button>
           <Button
             asChild
             variant="outline"
             size="lg"
-            className="border-white/30 text-white hover:bg-white/10 hover:text-white"
+            className="bg-transparent border-white/30 text-white hover:bg-white/10 hover:text-white"
           >
             <Link href="#casos-de-uso">Ver casos de uso</Link>
           </Button>

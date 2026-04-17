@@ -21,12 +21,12 @@ export function Navbar() {
   }, [isOpen]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#E5E7EB] bg-white/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-surface/95 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="flex flex-col leading-none">
-          <span className="text-lg font-bold text-brand">ConsultorIA</span>
-          <span className="text-[10px] font-medium uppercase tracking-widest text-[#8A929E]">
+          <span className="font-heading text-lg font-bold text-primary">ConsultorIA</span>
+          <span className="text-[10px] font-medium uppercase tracking-widest text-muted">
             by PotencIA
           </span>
         </Link>
@@ -37,7 +37,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[#1E2A3A] transition-colors hover:text-brand"
+              className="text-sm font-medium text-foreground transition-colors hover:text-primary"
             >
               {link.label}
             </Link>
@@ -46,13 +46,13 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           {/* CTA */}
-          <Button asChild size="sm">
+          <Button asChild size="sm" variant="primary">
             <Link href="#formulario">Solicitar consultoría</Link>
           </Button>
 
           {/* Hamburger — mobile only */}
           <button
-            className="ml-1 flex items-center justify-center rounded p-1.5 text-[#1E2A3A] transition-colors hover:bg-surface-alt md:hidden"
+            className="ml-1 flex items-center justify-center rounded p-1.5 text-foreground transition-colors hover:bg-primary-soft md:hidden"
             onClick={() => setIsOpen((v) => !v)}
             aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={isOpen}
@@ -64,13 +64,13 @@ export function Navbar() {
 
       {/* Mobile nav panel */}
       {isOpen && (
-        <nav className="border-t border-[#E5E7EB] bg-white px-6 py-4 md:hidden">
+        <nav className="border-t border-border bg-surface px-6 py-4 md:hidden">
           <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block text-base font-medium text-[#1E2A3A] transition-colors hover:text-brand"
+                  className="block text-base font-medium text-foreground transition-colors hover:text-primary"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

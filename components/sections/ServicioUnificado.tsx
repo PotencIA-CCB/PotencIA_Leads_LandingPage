@@ -9,11 +9,6 @@ interface ExcludedItem {
   text: string;
 }
 
-interface SectionHeaderProps {
-  title: string;
-  subtitle: string;
-}
-
 interface ProcessTimelineProps {
   steps: Step[];
 }
@@ -83,24 +78,6 @@ const NO_INCLUYE: ExcludedItem[] = [
   { text: "Compromisos posteriores a la sesión" },
 ];
 
-// Green checkmark SVG icon
-function CheckIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M20 6L9 17l-5-5" />
-    </svg>
-  );
-}
-
 // Red X SVG icon
 function XIcon({ className }: { className?: string }) {
   return (
@@ -120,28 +97,17 @@ function XIcon({ className }: { className?: string }) {
   );
 }
 
-function SectionHeader({ title, subtitle }: SectionHeaderProps) {
-  return (
-    <div className="mb-12 text-center">
-      <h2 className="text-3xl font-bold text-[#1E2A3A] md:text-4xl">{title}</h2>
-      <p className="mx-auto mt-4 max-w-xl text-base text-[#5A6470]">
-        {subtitle}
-      </p>
-    </div>
-  );
-}
-
 function ProcessTimeline({ steps }: ProcessTimelineProps) {
   return (
-    <div className="w-full rounded-xl border border-[#E5E7EB] bg-white p-6 shadow-sm">
-      <h3 className="mb-6 text-lg font-semibold text-[#1E2A3A]">
+    <div className="w-full rounded-xl border border-border bg-surface p-6 shadow-brand">
+      <h3 className="font-heading mb-6 text-lg font-semibold text-primary-deep">
         El proceso paso a paso
       </h3>
 
       {/* Timeline container with connecting line */}
       <div className="relative">
         {/* Horizontal connector line */}
-        <div className="absolute left-8 right-8 top-5 hidden h-0.5 bg-[#E5E7EB] md:block" />
+        <div className="absolute left-8 right-8 top-5 hidden h-0.5 bg-border md:block" />
 
         <div className="flex flex-col gap-6 md:flex-row md:justify-between">
           {steps.map((step, index) => (
@@ -150,17 +116,17 @@ function ProcessTimeline({ steps }: ProcessTimelineProps) {
               className="relative flex flex-1 flex-col items-center text-center md:items-start md:text-left"
             >
               {/* Step circle */}
-              <div className="relative z-10 mb-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white shadow-sm">
+              <div className="relative z-10 mb-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary text-sm font-bold text-surface shadow-brand">
                 {step.number}
               </div>
 
               {/* Duration badge */}
-              <span className="mb-2 rounded-full bg-surface-alt px-2.5 py-0.5 text-xs font-medium text-[#5A6470]">
+              <span className="mb-2 rounded-full bg-primary-soft px-2.5 py-0.5 text-xs font-medium text-muted">
                 {step.duration}
               </span>
 
               {/* Title */}
-              <h4 className="mb-2 text-base font-semibold text-[#1E2A3A]">
+              <h4 className="mb-2 text-base font-semibold text-foreground">
                 {step.title}
               </h4>
 
@@ -169,7 +135,7 @@ function ProcessTimeline({ steps }: ProcessTimelineProps) {
                 {step.bullets.map((bullet, bulletIndex) => (
                   <li
                     key={bulletIndex}
-                    className="flex items-start gap-2 text-sm text-[#5A6470]"
+                    className="flex items-start gap-2 text-sm text-muted"
                   >
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                     {bullet}
@@ -186,8 +152,8 @@ function ProcessTimeline({ steps }: ProcessTimelineProps) {
 
 function ResultsChecklist() {
   return (
-    <div className="flex h-full flex-col rounded-xl border border-[#E5E7EB] bg-white p-6 shadow-sm">
-      <h3 className="mb-6 text-lg font-semibold text-[#1E2A3A]">
+    <div className="flex h-full flex-col rounded-xl border border-border bg-surface p-6 shadow-brand">
+      <h3 className="font-heading mb-6 text-lg font-semibold text-primary-deep">
         Lo que obtienes al finalizar la consultoría
       </h3>
 
@@ -196,14 +162,14 @@ function ResultsChecklist() {
         {CARDS.map((card) => (
           <div
             key={card.titulo}
-            className="flex flex-1 min-h-24 items-center justify-center rounded-lg border border-[#E5E7EB] bg-surface-alt p-4 text-center"
-          >
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-2xl">{card.emoji}</span>
-              <span className="text-sm font-semibold text-[#1E2A3A]">
-                {card.titulo}
-              </span>
-            </div>
+              className="flex min-h-24 flex-1 items-center justify-center rounded-lg border border-border bg-primary-soft p-4 text-center"
+            >
+              <div className="flex flex-col items-center gap-2">
+                <span className="text-2xl">{card.emoji}</span>
+                <span className="text-sm font-semibold text-foreground">
+                  {card.titulo}
+                </span>
+              </div>
           </div>
         ))}
       </div>
@@ -213,8 +179,8 @@ function ResultsChecklist() {
 
 function NoIncluyeRow({ items }: NoIncluyeRowProps) {
   return (
-    <div className="mt-8 rounded-xl border border-red-200 bg-red-50 p-6">
-      <h4 className="mb-4 text-center text-sm font-semibold uppercase tracking-wide text-red-600">
+    <div className="mt-8 rounded-xl border border-border bg-surface p-6">
+      <h4 className="mb-4 text-center text-sm font-semibold uppercase tracking-wide text-primary">
         Lo que NO incluye la sesión
       </h4>
 
@@ -222,9 +188,9 @@ function NoIncluyeRow({ items }: NoIncluyeRowProps) {
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm text-[#5A6470]"
+            className="flex items-center gap-2 rounded-full bg-surface-alt px-4 py-2 text-sm text-muted"
           >
-            <XIcon className="h-4 w-4 text-red-500" />
+            <XIcon className="h-4 w-4 text-secondary" />
             <span>{item.text}</span>
           </div>
         ))}
@@ -235,7 +201,7 @@ function NoIncluyeRow({ items }: NoIncluyeRowProps) {
 
 function Disclaimer({ text }: DisclaimerProps) {
   return (
-    <p className="mt-8 text-center text-xs italic text-[#5A6470]">{text}</p>
+    <p className="mt-8 text-center text-xs italic text-muted">{text}</p>
   );
 }
 
@@ -248,10 +214,10 @@ export function ServicioUnificado({ id = "servicio" }: ServicioUnificadoProps) {
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">
             Metodología
           </p>
-          <h2 className="text-3xl font-bold text-[#1E2A3A] md:text-4xl">
+          <h2 className="font-heading text-3xl font-bold text-primary-deep md:text-4xl">
             Cómo funciona tu sesión
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-[#5A6470]">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-muted">
             Una sesión estratégica enfocada en resultados concretos para tu negocio
           </p>
         </div>

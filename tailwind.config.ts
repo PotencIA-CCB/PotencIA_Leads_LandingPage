@@ -8,19 +8,39 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-poppins)", "sans-serif"],
+        sans: ["var(--font-inter)", "Inter", "Barlow", "sans-serif"],
+        heading: [
+          "var(--font-space-grotesk)",
+          "Space Grotesk",
+          "Poppins",
+          "Barlow",
+          "sans-serif",
+        ],
       },
       colors: {
+        primary: "#003087",
+        secondary: "#004BB5",
+        accent: "#00C8FF",
+        muted: "#5A6070",
+        border: "#DADEE7",
+        surface: "#FFFFFF",
+        "surface-alt": "#F4F6FA",
+        foreground: "#141D2E",
+        "primary-soft": "#E8EEFB",
+        "primary-deep": "#0E2758",
+        "hero-end": "#0066CC",
         brand: "#003087",
-        accent: "#E8470A",
-        sky: "#00AEEF",
-        "brand-light": "#0050C8",
-        "surface-alt": "#F2F4F7",
+        sky: "#00C8FF",
+        "brand-light": "#004BB5",
       },
       borderRadius: {
+        xl: "var(--radius-lg)",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        brand: "var(--shadow-brand)",
       },
       keyframes: {
         "accordion-down": {

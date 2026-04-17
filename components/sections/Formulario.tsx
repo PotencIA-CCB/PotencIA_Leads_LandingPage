@@ -18,7 +18,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-type FormData = z.infer<typeof LeadSchema>;
+interface FormData extends z.infer<typeof LeadSchema> {}
 
 const SOLUTIONS = [
   { value: "asistente", label: "Asistentes de IA Personales" },
@@ -87,7 +87,7 @@ const USE_CASES: Record<string, string[]> = {
 
 function FieldError({ message }: { message?: string }) {
   if (!message) return null;
-  return <p className="mt-1 text-xs text-red-500">{message}</p>;
+  return <p className="mt-1 text-xs text-secondary">{message}</p>;
 }
 
 export function Formulario() {
@@ -140,24 +140,24 @@ export function Formulario() {
 
   if (status === "success") {
     return (
-      <section id="formulario" className="bg-brand py-20">
+      <section id="formulario" className="bg-brand-hero py-20">
         <div className="mx-auto max-w-2xl px-6 text-center">
-          <div className="rounded-2xl bg-white p-12 shadow-xl">
+          <div className="rounded-2xl bg-surface p-12 shadow-brand">
             <div className="mb-4 text-5xl">🎉</div>
-            <h2 className="mb-3 text-2xl font-bold text-[#1E2A3A]">
+            <h2 className="font-heading mb-3 text-2xl font-bold text-primary-deep">
               ¡Registro exitoso!
             </h2>
-            <p className="mb-2 text-base text-[#5A6470]">
+            <p className="mb-2 text-base text-muted">
               Recibimos tus datos correctamente. En segundos te redirigimos para
               que agendés tu sesión de ConsultorIA.
             </p>
-            <p className="text-sm text-[#8A929E]">
+            <p className="text-sm text-muted">
               Si la ventana no se abre automáticamente,{" "}
               <a
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand underline"
+                className="text-primary underline"
               >
                 hacé clic aquí
               </a>
@@ -165,7 +165,7 @@ export function Formulario() {
             </p>
             <div className="mt-6 flex justify-center">
               <div className="h-1.5 w-48 overflow-hidden rounded-full bg-surface-alt">
-                <div className="h-full animate-[progress_3s_linear_forwards] rounded-full bg-brand" />
+                <div className="h-full animate-[progress_3s_linear_forwards] rounded-full bg-secondary" />
               </div>
             </div>
           </div>
@@ -175,15 +175,15 @@ export function Formulario() {
   }
 
   return (
-    <section id="formulario" className="bg-brand py-20">
+    <section id="formulario" className="bg-brand-hero py-20">
       <div className="mx-auto max-w-3xl px-6">
-        <div className="rounded-2xl bg-white shadow-xl overflow-hidden">
+        <div className="overflow-hidden rounded-2xl bg-surface shadow-brand">
           {/* Header */}
-          <div className="bg-sky px-8 py-6 text-center">
-            <h3 className="mb-1 text-2xl font-extrabold text-white">
+          <div className="bg-accent px-8 py-6 text-center">
+            <h3 className="font-heading mb-1 text-2xl font-extrabold text-primary-deep">
               Registra tu Solicitud
             </h3>
-            <p className="text-base text-white/85">
+            <p className="text-base text-primary-deep/85">
               Recibe una propuesta personalizada
             </p>
           </div>
@@ -197,7 +197,7 @@ export function Formulario() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="full_name">Nombre Completo <span className="text-red-500">*</span></Label>
+                <Label htmlFor="full_name">Nombre Completo <span className="text-secondary">*</span></Label>
                 <Input
                   id="full_name"
                   placeholder="Ej. Juan Pérez"
@@ -206,7 +206,7 @@ export function Formulario() {
                 <FieldError message={errors.full_name?.message} />
               </div>
               <div>
-                <Label htmlFor="id_num">Documento de Identidad <span className="text-red-500">*</span></Label>
+                <Label htmlFor="id_num">Documento de Identidad <span className="text-secondary">*</span></Label>
                 <Input
                   id="id_num"
                   type="tel"
@@ -219,7 +219,7 @@ export function Formulario() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="nit">NIT <span className="text-red-500">*</span></Label>
+                <Label htmlFor="nit">NIT <span className="text-secondary">*</span></Label>
                 <Input
                   id="nit"
                   placeholder="NIT empresa"
@@ -228,7 +228,7 @@ export function Formulario() {
                 <FieldError message={errors.nit?.message} />
               </div>
               <div>
-                <Label htmlFor="email">Correo Electrónico <span className="text-red-500">*</span></Label>
+                <Label htmlFor="email">Correo Electrónico <span className="text-secondary">*</span></Label>
                 <Input
                   id="email"
                   type="email"
@@ -241,7 +241,7 @@ export function Formulario() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label htmlFor="phone">Celular <span className="text-red-500">*</span></Label>
+                <Label htmlFor="phone">Celular <span className="text-secondary">*</span></Label>
                 <Input
                   id="phone"
                   placeholder="300 000 0000"
@@ -250,7 +250,7 @@ export function Formulario() {
                 <FieldError message={errors.phone?.message} />
               </div>
               <div>
-                <Label htmlFor="city">Ciudad <span className="text-red-500">*</span></Label>
+                <Label htmlFor="city">Ciudad <span className="text-secondary">*</span></Label>
                 <Input
                   id="city"
                   placeholder="Ej. Bogotá"
@@ -262,7 +262,7 @@ export function Formulario() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <Label>Nivel del cargo <span className="text-red-500">*</span></Label>
+                <Label>Nivel del cargo <span className="text-secondary">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("company_role_level", v, { shouldValidate: true })}
                 >
@@ -280,7 +280,7 @@ export function Formulario() {
                 <FieldError message={errors.company_role_level?.message} />
               </div>
               <div>
-                <Label>Área del cargo <span className="text-red-500">*</span></Label>
+                <Label>Área del cargo <span className="text-secondary">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("company_role_area", v, { shouldValidate: true })}
                 >
@@ -300,7 +300,7 @@ export function Formulario() {
             </div>
 
             <div>
-              <Label>Solución de Interés <span className="text-red-500">*</span></Label>
+              <Label>Solución de Interés <span className="text-secondary">*</span></Label>
               <Select
                 onValueChange={(v) => {
                   setValue("solution", v, { shouldValidate: true });
@@ -323,7 +323,7 @@ export function Formulario() {
 
             {showUseCase && solutionValue && USE_CASES[solutionValue] && (
               <div>
-                <Label>Tipo de Caso de Uso <span className="text-red-500">*</span></Label>
+                <Label>Tipo de Caso de Uso <span className="text-secondary">*</span></Label>
                 <Select
                   onValueChange={(v) => setValue("use_case", v, { shouldValidate: true })}
                 >
@@ -343,7 +343,7 @@ export function Formulario() {
             )}
 
             <div>
-              <Label htmlFor="comments">Cuéntanos sobre tu proyecto <span className="text-red-500">*</span></Label>
+              <Label htmlFor="comments">Cuéntanos sobre tu proyecto <span className="text-secondary">*</span></Label>
               <Textarea
                 id="comments"
                 placeholder="Describe tus necesidades, objetivos o el problema que querés resolver..."
@@ -355,8 +355,8 @@ export function Formulario() {
 
             {/* Perfil */}
             <div className="mt-2.5">
-              <p className="mb-2.5 font-semibold text-[#1E2A3A]">
-                Para finalizar tu registro, seleccioná tu perfil<span className="text-red-500">*</span>
+              <p className="mb-2.5 font-semibold text-foreground">
+                Para finalizar tu registro, seleccioná tu perfil<span className="text-secondary">*</span>
               </p>
               <label className="mb-2 flex cursor-pointer items-start gap-2">
                 <input
@@ -365,7 +365,7 @@ export function Formulario() {
                   onChange={(e) => setValue("perfil_personal", e.target.checked, { shouldValidate: true })}
                   className="mt-1 shrink-0"
                 />
-                <span className="text-sm text-[#5A6470]">No tengo NIT, tengo un interés puramente personal y/o profesional</span>
+                <span className="text-sm text-muted">No tengo NIT, tengo un interés puramente personal y/o profesional</span>
               </label>
               <label className="flex cursor-pointer items-start gap-2">
                 <input
@@ -374,18 +374,18 @@ export function Formulario() {
                   onChange={(e) => setValue("perfil_empresa", e.target.checked, { shouldValidate: true })}
                   className="mt-1 shrink-0"
                 />
-                <span className="text-sm text-[#5A6470]">Hago parte o tengo un negocio registrado en Cámara de Comercio</span>
+                <span className="text-sm text-muted">Hago parte o tengo un negocio registrado en Cámara de Comercio</span>
               </label>
             </div>
 
             {/* Consentimiento */}
-            <p className="mt-4 text-xs leading-relaxed text-[#5A6470]">
+            <p className="mt-4 text-xs leading-relaxed text-muted">
               Al marcar la siguiente casilla, autorizás expresamente el tratamiento de sus datos personales, por parte de la Cámara de Comercio de Barranquilla, conforme a la{" "}
               <a
                 href="https://www.camarabaq.org.co/acerca-de-nosotros/politica-de-privacidad-de-datos-personales-de-la-camara-de-comercio-de-barranquilla/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand underline"
+                className="text-primary underline"
               >
                 Política de tratamiento de datos personales
               </a>{" "}
@@ -394,21 +394,21 @@ export function Formulario() {
                 href="https://www.camarabaq.org.co/wp-content/uploads/2023/08/privacidad.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand underline"
+                className="text-primary underline"
               >
                 Aviso de Privacidad
               </a>
             </p>
 
             <div className="mt-2.5">
-              <p className="mb-2 font-semibold text-[#1E2A3A]">Tratamiento de datos personales</p>
+              <p className="mb-2 font-semibold text-foreground">Tratamiento de datos personales</p>
               <label className="flex cursor-pointer items-start gap-2">
                 <input
                   type="checkbox"
                   {...register("autorizo_datos")}
                   className="mt-1 shrink-0"
                 />
-                <span className="text-sm text-[#5A6470]">Autorizo el tratamiento de mis datos personales</span>
+                <span className="text-sm text-muted">Autorizo el tratamiento de mis datos personales</span>
               </label>
               <FieldError message={errors.autorizo_datos?.message} />
             </div>
@@ -423,7 +423,8 @@ export function Formulario() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-accent hover:bg-accent/90"
+                variant="accent"
+                className="w-full"
                 disabled={status === "loading"}
               >
                 {status === "loading" ? "Enviando..." : "Enviar Solicitud 📧"}

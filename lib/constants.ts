@@ -10,7 +10,7 @@ export const CASOS: CasoDeUso[] = [
     descripcion:
       "Encargado de asistirte en tus tareas rutinarias, liberando tu tiempo para decisiones estratégicas de alto valor para tu área.",
     badge: "Gestión & Productividad",
-    badgeColor: "bg-sky/10 text-sky",
+    badgeColor: "",
     metricas: [
       { valor: "⏱️", etiqueta: "Ahorro en tiempo operativo" },
       { valor: "🚀", etiqueta: "Mayor eficiencia diaria" },
@@ -62,7 +62,7 @@ export const CASOS: CasoDeUso[] = [
     descripcion:
       "Potencia tu ecosistema de trabajo con agentes inteligentes que gestionan tu información, agenda y documentos de forma proactiva.",
     badge: "Integraciones básicas ",
-    badgeColor: "bg-sky/10 text-sky",
+    badgeColor: "",
     metricas: [
       { valor: "📧", etiqueta: "Menos tiempo en revisar emails" },
       { valor: "📅", etiqueta: "Mejor organización semanal" },
@@ -103,7 +103,7 @@ export const CASOS: CasoDeUso[] = [
     descripcion:
       "Transforma ideas en productos digitales funcionales en cuestión de horas utilizando herramientas de IA generativa y plataformas No-Code de última generación.",
     badge: "Demo desplegada en pocas horas",
-    badgeColor: "bg-sky/10 text-sky",
+    badgeColor: "",
     metricas: [
       { valor: "⚡", etiqueta: "Prototipos en tiempo record" },
       { valor: "🛠️", etiqueta: "Cero código requerido para iniciar" },
