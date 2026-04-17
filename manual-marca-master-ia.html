@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual de Marca — Máster IA</title>
+  <style>
+    :root {
+      --ccb-azul: #003087;
+      --ccb-azul-medio: #004BB5;
+      --ccb-azul-claro: #E8EEFB;
+      --ccb-cian: #00C8FF;
+      --ccb-gris: #F4F6FA;
+      --ccb-suave: #5A6070;
+      --primary: #0E2758;
+      --secondary: #2B7CEE;
+      --accent: #20B6AA;
+      --text: #141D2E;
+      --muted: #646F87;
+      --white: #FFFFFF;
+      --border: #DADEE7;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(14, 39, 88, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Barlow", "Inter", "Segoe UI", Arial, sans-serif;
+      background: var(--ccb-gris);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .cover {
+      color: var(--white);
+      padding: 72px 24px;
+      background: linear-gradient(135deg, var(--ccb-azul) 0%, var(--ccb-azul-medio) 60%, #0066CC 100%);
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.35);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin: 12px 0 10px;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      color: rgba(255,255,255,.9);
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    main { padding: 28px 24px 56px; }
+
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.45rem;
+      color: var(--primary);
+    }
+
+    h3 {
+      margin: 16px 0 10px;
+      font-size: 1.05rem;
+      color: var(--primary);
+    }
+
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 0; padding-left: 18px; }
+
+    .grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .swatch {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .swatch-color {
+      height: 78px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .swatch-info {
+      padding: 10px;
+      font-size: .92rem;
+    }
+
+    .token {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .85rem;
+      color: var(--muted);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .type-sample {
+      border: 1px dashed var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      margin-top: 10px;
+    }
+
+    .display {
+      font-family: "Space Grotesk", "Poppins", "Barlow", sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      line-height: 1.15;
+      color: var(--primary);
+      margin: 0;
+    }
+
+    .body {
+      font-family: "Inter", "Barlow", Arial, sans-serif;
+      font-size: 1rem;
+      color: var(--text);
+      margin: 8px 0 0;
+    }
+
+    .ui {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-weight: 700;
+      cursor: default;
+      min-height: 44px;
+    }
+
+    .btn-primary { background: var(--ccb-azul-medio); color: #fff; }
+    .btn-accent { background: var(--ccb-cian); color: var(--primary); }
+    .btn-outline {
+      background: #fff;
+      color: var(--ccb-azul-medio);
+      border: 2px solid var(--ccb-azul-medio);
+    }
+
+    .card-demo {
+      margin-top: 10px;
+      border: 2px solid var(--ccb-azul-claro);
+      background: #fff;
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .note {
+      font-size: .92rem;
+      color: var(--muted);
+      padding: 10px;
+      background: #f9fbff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .88rem;
+      padding: 4px 0 10px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="cover">
+    <div class="wrap">
+      <span class="badge">Manual de Identidad</span>
+      <h1>Máster IA — Guía de Marca</h1>
+      <p class="subtitle">
+        Documento de referencia visual y verbal para piezas digitales de la landing de Máster IA (Cámara de Comercio de Barranquilla).
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>1. Esencia de marca</h2>
+      <p><strong>Nombre:</strong> Máster IA</p>
+      <p><strong>Respaldo institucional:</strong> Cámara de Comercio de Barranquilla</p>
+      <p><strong>Promesa:</strong> convertir la IA de intención a resultado con acompañamiento real.</p>
+      <ul>
+        <li>Personalidad: confiable, tecnológica, clara y orientada a impacto.</li>
+        <li>Tono: directo, profesional, práctico y motivador.</li>
+        <li>Mensaje central: implementación real, no solo capacitación.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Tipografía</h2>
+      <h3>Familias recomendadas</h3>
+      <ul>
+        <li><strong>Display/Titulares:</strong> Space Grotesk (fallback: Poppins/Barlow)</li>
+        <li><strong>Cuerpo/UI:</strong> Inter (fallback: Barlow)</li>
+        <li><strong>Compatibilidad institucional:</strong> Barlow</li>
+      </ul>
+
+      <div class="type-sample">
+        <p class="display">La IA debe generar resultados, no quedarse en intención.</p>
+        <p class="body">Texto de apoyo para explicar beneficios, niveles y llamados a la acción en lenguaje claro y orientado a negocio.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Paleta cromática</h2>
+      <h3>Colores principales de Máster IA</h3>
+      <div class="grid">
+        <article class="swatch">
+          <div class="swatch-color" style="background:#003087"></div>
+          <div class="swatch-info">Azul CCB<span class="token">#003087</span></div>
+        </article>
+        <article class="swatch">
+          <div class="swatch-color" style="background:#004BB5"></div>
+          <div class="swatch-info">Azul Medio<span class="token">#004BB5</span></div>
+        </article>
+        <article class="swatch">
+          <div class="swatch-color" style="background:#00C8FF"></div>
+          <div class="swatch-info">Cian Acento<span class="token">#00C8FF</span></div>
+        </article>
+        <article class="swatch">
+          <div class="swatch-color" style="background:#E8EEFB"></div>
+          <div class="swatch-info">Azul Claro<span class="token">#E8EEFB</span></div>
+        </article>
+        <article class="swatch">
+          <div class="swatch-color" style="background:#F4F6FA"></div>
+          <div class="swatch-info">Gris Fondo<span class="token">#F4F6FA</span></div>
+        </article>
+        <article class="swatch">
+          <div class="swatch-color" style="background:#5A6070"></div>
+          <div class="swatch-info">Texto Suave<span class="token">#5A6070</span></div>
+        </article>
+      </div>
+
+      <h3 style="margin-top:16px;">Gradiente principal</h3>
+      <div class="swatch" style="max-width:520px;">
+        <div class="swatch-color" style="height:90px; background:linear-gradient(135deg,#003087 0%,#004BB5 60%,#0066CC 100%);"></div>
+        <div class="swatch-info">Hero Máster IA<span class="token">linear-gradient(135deg, #003087 0%, #004BB5 60%, #0066CC 100%)</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. Componentes visuales</h2>
+      <h3>Botones</h3>
+      <div class="ui">
+        <button class="btn btn-primary">CTA Primario</button>
+        <button class="btn btn-accent">CTA Acento</button>
+        <button class="btn btn-outline">Secundario Outline</button>
+      </div>
+
+      <h3>Tarjeta base</h3>
+      <div class="card-demo">
+        <strong style="color:#003087">Formación progresiva por niveles</strong>
+        <p style="margin:6px 0 0;color:#5A6070;">Contenedor con fondo blanco, borde suave y sombra ligera para mantener limpieza visual.</p>
+      </div>
+
+      <p class="note" style="margin-top:12px;">
+        Reglas: usar bordes redondeados (12–20 px), sombras sutiles y alto contraste en textos/acciones.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Voz y estilo de comunicación</h2>
+      <ul>
+        <li><strong>Hablar de negocio:</strong> resultados, operación, decisión y estrategia.</li>
+        <li><strong>Evitar:</strong> tecnicismo sin contexto y promesas ambiguas.</li>
+        <li><strong>Estructura sugerida:</strong> problema real → ruta clara → acompañamiento → resultado tangible.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Reglas de uso rápido</h2>
+      <h3>DO</h3>
+      <ul>
+        <li>Priorizar azul institucional como base de confianza.</li>
+        <li>Usar cian como acento en acciones y énfasis.</li>
+        <li>Mantener jerarquía tipográfica clara (H1/H2/body).</li>
+      </ul>
+
+      <h3>DON'T</h3>
+      <ul>
+        <li>No saturar con demasiados acentos en una sola pieza.</li>
+        <li>No usar gradientes en textos largos.</li>
+        <li>No bajar contraste en botones o links.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Manual generado para uso interno · Máster IA / CCB
+    </footer>
+  </main>
+</body>
+</html>
